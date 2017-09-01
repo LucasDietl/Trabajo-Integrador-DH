@@ -3,7 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.logoname{
+  padding-top: 7px!important;
+  color: black!important;
+}
 
+.thumbnail {
+  border-color: black!important;
+}
+.theblondie{
+max-height: 300px!important;
+}
+.comingsoon{
+  max-width: 1200px!important;
+}
 .signin {
   padding-top: 40px;
   padding-bottom: 40px;
