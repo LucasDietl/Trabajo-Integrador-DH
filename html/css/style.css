@@ -15,6 +15,7 @@
     border: 1px solid rgb(218, 105, 97)!important;
     max-height: 300px!important;
     border-radius: 50%!important;
+    margin-top: 70px;
   }
 .encabezado{
 display: block;
@@ -32,7 +33,7 @@ aside{
   background: red;
   float: left;
 }
-.barralateral{ 
+.barralateral{
   position: absolute;
   left: 200px;
   padding-left: 100px;
