@@ -5,18 +5,45 @@
 }
 .logoname{
   padding-top: 7px!important;
-  color: black!important;
+  }
+.bordecopado{
+    display: inline-block;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid rgb(218, 105, 97)!important;
+    max-height: 300px!important;
+    border-radius: 50%!important;
+  }
+.encabezado{
+display: block;
+width: 100%;
+text-align: center;
 }
-
-.thumbnail {
-  border-color: black!important;
-}
-.theblondie{
-max-height: 300px!important;
-}
-.comingsoon{
+.tamaño{
+  float: none;
   max-width: 1200px!important;
 }
+aside{
+  position: absolute;
+  width: 200px;
+  height: 500px;
+  background: red;
+  float: left;
+}
+.barralateral{ 
+  position: absolute;
+  left: 200px;
+  padding-left: 100px;
+  right: 0;
+}
+
+
+
+
+
+
 .signin {
   padding-top: 40px;
   padding-bottom: 40px;
