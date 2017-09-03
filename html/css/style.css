@@ -98,3 +98,9 @@ aside{
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+footer{
+  background-color: black;
+  color: white;
+  font-family: 'Sunshiney', cursive;
+  font-size: 22px;
+}
