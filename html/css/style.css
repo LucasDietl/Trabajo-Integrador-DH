@@ -5,7 +5,7 @@
 }
 /* NOTE: navbar sart */
 .navbarcolor{
-  background: linear-gradient(to right,pink,#D4AF37)!important;
+  background: linear-gradient(to right,#ef32d9,#89fffd)!important;
 }
 
 nav div ul li a{
@@ -103,9 +103,12 @@ aside{
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+/* NOTE: footer start */
 footer{
-  background-color: black;
+  background: linear-gradient(to left,#7b4397 ,#dc2430);
   color: white;
   font-family: 'Sunshiney', cursive;
   font-size: 22px;
 }
+/* NOTE: footer end */
