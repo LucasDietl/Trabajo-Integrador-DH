@@ -51,18 +51,7 @@ aside{
   background: red;
   float: left;
 }
-.barralateral{
-  position: absolute;
-  left: 200px;
-  padding-left: 100px;
-  right: 0;
-}
-
-
-
-
-
-
+/* NOTE: sig in start */
 .signin {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -103,6 +92,7 @@ aside{
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+/* NOTE: sig in end */
 
 /* NOTE: footer start */
 footer{
@@ -110,5 +100,15 @@ footer{
   color: white;
   font-family: 'Sunshiney', cursive;
   font-size: 22px;
+}
+footer ul, footer h3{
+list-style: none;
+text-align: center;
+}
+footer ul li a{
+  color: white;
+}
+footer h3{
+  text-decoration: underline;
 }
 /* NOTE: footer end */

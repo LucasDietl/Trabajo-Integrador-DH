@@ -2,27 +2,27 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <h5>Get started</h5>
+        <h3>Get started</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
+          <li><a href="home.php">Inicio</a></li>
+          <li><a href="signin.php">Registrarse</a></li>
+          <li><a href="signup.php">Iniciar sesión</a></li>
         </ul>
       </div>
       <div class="col-sm-4">
-        <h5>Get started</h5>
+        <h3>Productos</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
+          <li><a href="#">Destacados</a></li>
+          <li><a href="#">Temporadas</a></li>
+          <li><a href="#">Buscador</a></li>
         </ul>
       </div>
       <div class="col-sm-4">
-        <h5>Get started</h5>
+        <h3>Nosotros</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Nuestra historia</a></li>
+          <li><a href="#">RRHH</a></li>
         </ul>
       </div>
     </div>
