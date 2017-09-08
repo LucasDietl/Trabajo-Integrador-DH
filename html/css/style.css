@@ -3,19 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* NOTE: navbar sart */
 .navbarcolor{
-  background-color: pink!important;
+  background: linear-gradient(to right,pink,#D4AF37)!important;
 }
+
 nav div ul li a{
   color: white!important;
   font-family: 'Sunshiney', cursive;
   font-size: 22px;
 }
+
+/* NOTE: navbar end */
 .logoname{
   padding-top: 7px!important;
   color: black!important;
   }
+
+
 .bordecopado{
     display: inline-block;
     height: auto;
