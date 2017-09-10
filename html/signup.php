@@ -10,14 +10,14 @@
 
     <title>The Blondie - Shoes</title>
   </head>
- 
+
   <body>
-     
+
      <!-- NOTE: Navbar start -->
      <?php require_once("navbar.php"); ?>
      <!-- NOTE: Navbar end -->
-     
-     <div class="container">
+
+     <div class="container margeninicial">
           <header class="">
                <h1>Registrese</h1>
           </header>
@@ -25,10 +25,10 @@
                <img src="html\images\zapatosvarios.jpg" alt="">
           </div>
      </div>
-     
+
      <!-- NOTE: Footer start -->
      <?php require_once("footer.php"); ?>
      <!-- NOTE: Footer end -->
-     
+
   </body>
 </html>
