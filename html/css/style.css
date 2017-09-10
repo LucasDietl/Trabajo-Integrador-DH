@@ -116,10 +116,29 @@ footer h3{
 
 /* NOTE: SingUp Starts*/
 
-.signup-h1 {
-     margin-top: 100px !important;
+.container-signup {
+     width: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     padding-top: 50px;
+
 }
 
-
+.container-signup-img {
+     width: fit-content;
+     flex-grow: 1;
+     flex-shrink: 1;
+     
+}
+.container-signup-form {
+     flex-grow: 1;
+}
+.form-signup label{
+     margin: 5px 0px 0px 0px;
+}
+.form-signup input{
+     margin-top: 5px;
+}
 
 /* NOTE: SingUp Ends*/
