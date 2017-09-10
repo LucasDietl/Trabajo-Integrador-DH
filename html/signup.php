@@ -22,12 +22,12 @@
                <h1>Registrese</h1>
           </header>
           <div class="singup">
-               <img src="html\images\zapatosvarios.jpg" alt="">
+               <img src="images\zapatosvarios.jpg" alt="">
           </div>
      </div>
 
      <!-- NOTE: Footer start -->
-     <?php require_once("footer.php"); ?>
+     <?php //require_once("footer.php"); ?>
      <!-- NOTE: Footer end -->
 
   </body>

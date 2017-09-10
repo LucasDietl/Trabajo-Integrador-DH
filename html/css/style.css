@@ -45,13 +45,7 @@ text-align: center;
   float: none;
   width: 100%!important;
 }
-aside{
-  position: absolute;
-  width: 200px;
-  height: 500px;
-  background: red;
-  float: left;
-}
+
 /* NOTE: sig in start */
 .signin {
   padding-top: 40px 0px 40px 0px;
