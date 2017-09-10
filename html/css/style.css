@@ -14,6 +14,9 @@ nav div ul li a{
   font-family: 'Sunshiney', cursive;
   font-size: 22px;
 }
+.navbar-toggle{
+  background-color: transparent!important;
+}
 /* NOTE: navbar end */
 
 .logoname{
