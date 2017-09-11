@@ -1,5 +1,5 @@
 <footer>
-  <div class="container">
+  <div class="container hidden-xs">
     <div class="row">
       <div class="col-sm-4">
         <h3>Get started</h3>

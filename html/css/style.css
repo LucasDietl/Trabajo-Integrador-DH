@@ -19,6 +19,28 @@ nav div ul li a{
 }
 /* NOTE: navbar end */
 
+/* NOTE: Contenido home Start */
+.slideimages{
+  margin-top: 50px; /* NOTE: este margen es para que todo lo que pongas debajo del navbar no sea tapado por el mismo */
+}
+.slideshow{
+padding: 0px!important;
+background-size: cover;
+}
+.slideshow .izquierda{
+  float: left;
+  width: 50%;
+}
+.slideshow .derecha{
+  float: right;
+  width: 50%;
+}
+.slideshow .medio{
+  float: none;
+  width: 100%;
+}
+/* NOTE: Contenido home End */
+
 .logoname{
   padding-top: 7px!important;
   color: black!important;
@@ -49,7 +71,7 @@ text-align: center;
   width: 100%!important;
 }
 
-/* NOTE: sig in start */
+/* NOTE: sign in start */
 .signin {
   padding-top: 40px 0px 40px 0px;
   /*padding-bottom: 40px;*/
@@ -90,7 +112,7 @@ text-align: center;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* NOTE: sig in end */
+/* NOTE: sign in end */
 
 /* NOTE: footer start */
 footer{
@@ -139,3 +161,20 @@ footer h3{
 }
 
 /* NOTE: SingUp Ends*/
+/* NOTE: probando animaciones start */
+.logoredondo:hover{
+  -webkit-animation: pelota ease 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+}
+
+@-webkit-keyframes pelota {
+  0% {
+    -webkit-transform:  rotate(-360deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+}
+/* NOTE: probando animaciones start */
