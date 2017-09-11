@@ -14,28 +14,28 @@
     <title>The Blondie - Shoes</title>
   </head>
 <body>
-     
+
      <!-- NOTE: Navbar start -->
      <?php require_once("navbar.php"); ?>
      <!-- NOTE: Navbar end -->
-     
+
      <!-- NOTE: introduccion start -->
-     <div class="" style="display: flex;">
-       <div class="" style=" padding: 0px!important;background-size: cover;">
-         <img src="images/dorada.jpg" style="float: left; width: 50%;" alt="">
-         <img src="images/blackwhite.jpg" style="float: right; width: 50%;" alt="">
-         <img src="images/comingsoon.jpg" style="float: none; width: 100%;" alt="">
-         <img src="images/skate.jpg" style="float: left; width: 50%;" alt="">
-         <img src="images/piernasyzapatos.jpg" style="float: right; width: 50%;" alt="">
-         <img src="images/cactuswide.jpg" style="float: none; width: 100%;" alt="">
+     <div class="slideimages" style="display: flex;">
+       <div class="slideshow" style="">
+         <img src="images/dorada.jpg" class="izquierda"style="" alt="">
+         <img src="images/blackwhite.jpg" class="derecha" alt="">
+         <img src="images/comingsoon.jpg" class="medio" alt="">
+         <img src="images/skate.jpg" class="izquierda" alt="">
+         <img src="images/piernasyzapatos.jpg" class="derecha" alt="">
+         <img src="images/cactuswide.jpg" class="medio" alt="">
        </div>
      </div>
      <!-- NOTE: introduccion end -->
 
      <!-- NOTE: Imagen de presentacion Start -->
      <div class="container">
-       <header class="encabezado">
-         <img class="bordecopado" src="images/theblondie.jpg" alt="logo">
+       <header class="encabezado ">
+         <img class="bordecopado logoredondo" src="images/theblondie.jpg" alt="logo">
        </header>
      </div>
      <!-- NOTE: Imagen de presentacion end -->
@@ -135,7 +135,9 @@
           </div>
      </div><br><br>
      <!-- NOTE: contenido de os productos destacados end -->
+     <!-- NOTE: Boton de subir solo para mobile Start -->
 
+     <!-- NOTE: Boton de subir solo para mobile Start -->
      <!-- NOTE: Footer start -->
      <?php require_once("footer.php"); ?>
      <!-- NOTE: Footer end -->
