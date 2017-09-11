@@ -14,7 +14,32 @@ nav div ul li a{
   font-family: 'Sunshiney', cursive;
   font-size: 22px;
 }
+.navbar-toggle{
+  background-color: transparent!important;
+}
 /* NOTE: navbar end */
+
+/* NOTE: Contenido home Start */
+.slideimages{
+  margin-top: 50px; /* NOTE: este margen es para que todo lo que pongas debajo del navbar no sea tapado por el mismo */
+}
+.slideshow{
+padding: 0px!important;
+background-size: cover;
+}
+.slideshow .izquierda{
+  float: left;
+  width: 50%;
+}
+.slideshow .derecha{
+  float: right;
+  width: 50%;
+}
+.slideshow .medio{
+  float: none;
+  width: 100%;
+}
+/* NOTE: Contenido home End */
 
 .logoname{
   padding-top: 7px!important;
@@ -45,14 +70,8 @@ text-align: center;
   float: none;
   width: 100%!important;
 }
-aside{
-  position: absolute;
-  width: 200px;
-  height: 500px;
-  background: red;
-  float: left;
-}
-/* NOTE: sig in start */
+
+/* NOTE: sign in start */
 .signin {
   padding-top: 40px 0px 40px 0px;
   /*padding-bottom: 40px;*/
@@ -93,7 +112,7 @@ aside{
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* NOTE: sig in end */
+/* NOTE: sign in end */
 
 /* NOTE: footer start */
 footer{
@@ -103,8 +122,8 @@ footer{
   font-size: 22px;
 }
 footer ul, footer h3{
-list-style: none;
-text-align: center;
+  list-style: none;
+  text-align: center;
 }
 footer ul li a{
   color: white;
@@ -116,10 +135,16 @@ footer h3{
 
 /* NOTE: SingUp Starts*/
 
-.signup-h1 {
-     margin-top: 100px !important;
+.container-signup {
+     width: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     padding-top: 50px;
+
 }
 /* NOTE: SingUp Ends*/
+
 
 /* NOTE: FAQS starts */
 
@@ -143,3 +168,38 @@ font-family: 'Sunshiney', cursive;
     color: #7f7f7f;
 }
 /* NOTE: FAQS ends */
+
+.container-signup-img {
+     width: fit-content;
+     flex-grow: 1;
+     flex-shrink: 1;
+
+}
+.container-signup-form {
+     flex-grow: 1;
+}
+.form-signup label{
+     margin: 5px 0px 0px 0px;
+}
+.form-signup input{
+     margin-top: 5px;
+}
+
+/* NOTE: SingUp Ends*/
+/* NOTE: probando animaciones start */
+
+.logoredondo:hover{
+  -webkit-animation: pelota ease 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+}
+
+@-webkit-keyframes pelota {
+  0% {
+    -webkit-transform:  rotate(-360deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+}
