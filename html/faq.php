@@ -129,32 +129,8 @@
           No obstante, el color de los productos que aparecen en su pantalla puede estar sujeto a variaciones debido a su configuración del monitor, por lo que no podemos garantizar que los colores que usted vea sean 100% fieles a la realidad.
           </p>
           </div>
-
-
-
-
-
-
-          
-
-
-
-
-
-
-
-
-
          </section>
-        
-
-  
-
-
-
        </div>
-        
-
    <!-- NOTE: Footer start -->
    <?php require_once("footer.php"); ?>
    <!-- NOTE: Footer end -->
