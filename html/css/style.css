@@ -122,8 +122,8 @@ footer{
   font-size: 22px;
 }
 footer ul, footer h3{
-list-style: none;
-text-align: center;
+  list-style: none;
+  text-align: center;
 }
 footer ul li a{
   color: white;
@@ -162,6 +162,7 @@ footer h3{
 
 /* NOTE: SingUp Ends*/
 /* NOTE: probando animaciones start */
+
 .logoredondo:hover{
   -webkit-animation: pelota ease 5s;
   -webkit-animation-iteration-count: 1;
