@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney" rel="stylesheet">
@@ -51,7 +51,7 @@
                          <label for="usuario-pass-confirm">Confirmar Password:</label><br>
                          <input type="password" name="usuario-pass-confirm" value="" placeholder="Confirmar password"><br>
 
-                         <input type="submit" name="" value="Enviar">
+                         <input class="signup-form-boton" type="submit" name="" value="Enviar">
                          <input type="reset" name="" value="Borrar">
 
 

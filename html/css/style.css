@@ -133,26 +133,6 @@ footer h3{
 }
 /* NOTE: footer end */
 
-/* NOTE: signUp Starts*/
-
-.container-signup {
-     width: 960;
-     margin: 0 auto;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     padding-top: 50px;
-
-}
-
-.signup-form label{
-     font-size: 9px !important;
-
-}
-
-/* NOTE: signUp Ends*/
-
-
 /* NOTE: FAQS starts */
 
 .encabezadoFAQ h1 {
@@ -172,23 +152,45 @@ footer h3{
 }
 /* NOTE: FAQS ends */
 
+/* NOTE: signUp Starts*/
+
+.container-signup {
+     width: auto;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     padding-top: 50px;
+
+}
+
 .container-signup-img {
      width: fit-content;
      flex-grow: 1;
      flex-shrink: 1;
+     order: 1;
 
 }
 .container-signup-form {
-     flex-grow: 1;
+     flex-grow: 2;
+     order: 2;
 }
-.form-signup label{
-     margin: 5px 0px 0px 0px;
+.signup-form label{
+     margin: 10px 0px 0px 0px;
+     font-size: 10px !important;
+
 }
-.form-signup input{
-     margin-top: 5px;
+.signup-form input{
+     margin-top: -3px;
+}
+
+.signup-form-boton {
+     margin: 10px 3px 0px 0px !important;
 }
 
 /* NOTE: signUp Ends*/
+
+
 /* NOTE: probando animaciones start */
 
 .logoredondo:hover{
