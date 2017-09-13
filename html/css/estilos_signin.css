@@ -1,5 +1,5 @@
-body {
-	background-image: url('C:/Users/Isa/Desktop/blondie/Trabajo-Integrador-DH/html/images/base_2.jpg');
+.signinbody {
+	background-image: url("../images/base_2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -20,8 +20,8 @@ body {
 	font-family: Sunshiney;
 	font-size: 1.3em;
 	color: white;
-	line-height: 1em;	
-} 
+	line-height: 1em;
+}
 
 #inputEmail {
 	border: 1.3px solid white;
@@ -61,7 +61,7 @@ body {
 .btn-primary:hover {
 	background-color: #e6005c;
 	box-shadow: 5px 5px 10px #4d001f;
-} 
+}
 
 
 

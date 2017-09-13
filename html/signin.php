@@ -12,20 +12,20 @@
 
     <title>Sign In</title>
   </head>
-  <body>
+  <body class="signinbody">
     <!-- NOTE: Navbar start -->
     <?php require_once("navbar.php"); ?>
     <!-- NOTE: Navbar end -->
-    
-   
-    
+
+
+
 <div class="container" >
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-4">
 
       <form class="form-horizontal">
       <div class="form-group">
-        
+
         <h2 class="form-signin-heading">Sign in</h2>
 
         <label for="inputEmail" class="sr-only">Email address</label>
@@ -41,7 +41,7 @@
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>
-      
+
       </div>
     </div>
   </div>
