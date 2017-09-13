@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <?php // NOTE:ACA ESTA EL PROBLEMA!!!  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>?>
     <title>FAQ</title>
   </head>
   <body>
@@ -19,6 +20,7 @@
          <header class="encabezadoFAQ">
            <h1>Preguntas Frecuentes</h1>
          </header>
+         <div class="container">
 
          <section class="FAQ-compras">
            <h2>PREGUNTAS SOBRE LA COMPRA</h2>
@@ -32,12 +34,12 @@
               <li>Serás redirigido a una página con la ficha del producto en concreto, con varias fotografías del producto y su ficha descriptiva. Para comprarlo, deberás seleccionar el color y la talla deseada y hacer click sobre el botón de “comprar”. El artículo se incluirá directamente en tu bolsa de la compra y podrás seguir seleccionando artículos a través del botón “continuar comprando” o pasar al siguiente paso haciendo click en “comprar”.</li><br>
 
               <li>En la siguiente pantalla, <b>deberás introducir tus datos de envío y la forma de pago: Puedes pagar con tarjeta de crédito o débito o a través de Paypal.</b><br>
-              
+
               Aunque no es obligatorio, te recomendamos seleccionar la opción "abrir una cuenta para utilizar luego". De esta manera, podrás hacer el seguimiento de tu pedido en nuestra web y guardaremos los datos de tu pedido en tu panel de usuario.<br><br>
 
               Recuerda que los datos de envío deben indicarse con toda exactitud para evitar confusiones o incidencias en el envío de los artículos adquiridos. Debes indicarnos la CALLE, NÚMERO, ESCALERA, PISO, PUERTA, CÓDIGO POSTAL Y NÚMERO DE TELÉFONO porque es la única vía para que tu pedido llegue correctamente a destino. Es posible que nuestro transportista te envíe un sms para informarte de la puesta en reparto del pedido, por lo que si no rellenas este campo, no podrás recibir este mensaje. www.theblondieshoes.com no se responsabiliza de las direcciones erroneas o mal colocadas.
               </li>
-            </ul>
+            </ol>
           </div>
           <h3>¿COMO PUEDO PAGAR MI COMPRA?</h3>
           <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle2">Muéstrame</button>
@@ -88,11 +90,11 @@
           <div id="toogle5" class="collapse">
           <p>
           <br>
-          Si realizaste la compra habiéndote registrado previamente en nuestra web, podrás realizar el seguimiento de tu pedido desde tu panel de usuario.<br><br> 
+          Si realizaste la compra habiéndote registrado previamente en nuestra web, podrás realizar el seguimiento de tu pedido desde tu panel de usuario.<br><br>
 
           Recuerda que si la compra la hiciste sin haberte registrado previamente en la web (sin haber elegido una contraseña asociada a tu cuenta), tu pedido no aparecerá en tu histórico de pedidos.<br><br>
 
-          En ocasiones y en función de la franquicia de destino, el transportista (ENVIOS OCA) te mandará un e-mail o sms cuando ponga su paquete en reparto.<br><br> 
+          En ocasiones y en función de la franquicia de destino, el transportista (ENVIOS OCA) te mandará un e-mail o sms cuando ponga su paquete en reparto.<br><br>
 
           Si lo recibes y no vas a estar en casa ese día, puedes contactar con ellos para acordar una nueva fecha de entrega o recogida en la oficina del transportista más próxima a tu domicilio. Desde aquí puedes consultar las oficinas de entrega de <a target="_blank" href="http://www.enviosoca.com/">Envios-Oca</a>
           </p>
@@ -103,7 +105,7 @@
           <div id="toogle6" class="collapse">
           <p>
           <br>
-          Dispones de un plazo máximo de diez (10) días, antes de que el paquete vuelva a ser enviado a origen.<br><br> 
+          Dispones de un plazo máximo de diez (10) días, antes de que el paquete vuelva a ser enviado a origen.<br><br>
 
           Así que por favor, si pasado nuestro plazo de entrega habitual no has recibido tu paquete, ponte en contacto con el transportista para acordar una nueva fecha de entrega o recogida en tu oficina de OCA más cercana.
           </p>
@@ -131,6 +133,7 @@
           </div>
          </section>
        </div>
+      </div> 
    <!-- NOTE: Footer start -->
    <?php require_once("footer.php"); ?>
    <!-- NOTE: Footer end -->
