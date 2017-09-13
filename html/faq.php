@@ -133,6 +133,7 @@
           </div>
          </section>
        </div>
+      </div> 
    <!-- NOTE: Footer start -->
    <?php require_once("footer.php"); ?>
    <!-- NOTE: Footer end -->
