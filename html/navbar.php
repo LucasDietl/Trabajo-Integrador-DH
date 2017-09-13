@@ -22,9 +22,9 @@
       </ul>
       <form class="navbar-form navbar-right">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Ingrese aqui su busqueda">
+          <input type="text" class="form-control borderedondo" placeholder="Ingrese aqui su busqueda">
         </div>
-        <button type="submit" class="btn btn-default">Buscar</button>
+        <button type="submit" class="btn btnbuscar">Buscar</button>
       </form>
         </li>
       </ul>
