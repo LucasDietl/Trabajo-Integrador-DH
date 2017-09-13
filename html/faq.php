@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
+
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <?php // NOTE:ACA ESTA EL PROBLEMA!!!  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>?>
     <title>FAQ</title>
   </head>
   <body>
@@ -20,6 +20,7 @@
          <header class="encabezadoFAQ">
            <h1>Preguntas Frecuentes</h1>
          </header>
+         <div class="container">
 
          <section class="FAQ-compras">
            <h2>PREGUNTAS SOBRE LA COMPRA</h2>
@@ -38,7 +39,7 @@
 
               Recuerda que los datos de envío deben indicarse con toda exactitud para evitar confusiones o incidencias en el envío de los artículos adquiridos. Debes indicarnos la CALLE, NÚMERO, ESCALERA, PISO, PUERTA, CÓDIGO POSTAL Y NÚMERO DE TELÉFONO porque es la única vía para que tu pedido llegue correctamente a destino. Es posible que nuestro transportista te envíe un sms para informarte de la puesta en reparto del pedido, por lo que si no rellenas este campo, no podrás recibir este mensaje. www.theblondieshoes.com no se responsabiliza de las direcciones erroneas o mal colocadas.
               </li>
-            </ul>
+            </ol>
           </div>
           <h3>¿COMO PUEDO PAGAR MI COMPRA?</h3>
           <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#toogle2">Muéstrame</button>
