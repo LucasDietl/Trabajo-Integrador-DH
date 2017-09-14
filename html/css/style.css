@@ -188,12 +188,12 @@ text-align: center;
 	margin-bottom: 5px;
 }
 
-.form.control {
+/* NOTE: esta clase hay que cambiarla */.form.control {
 	font-size: 17px;
 	color: white;
 }
 
-.form-control placeholder {
+/* NOTE: esta clase hay que cambiarla */.form-control placeholder {
 	color: #ff3385;
 	font-size: 18px;
 }
@@ -220,6 +220,7 @@ footer{
   font-family: 'Sunshiney', cursive;
   font-size: 22px;
   float: none;
+  bottom: 0;
 }
 footer ul, footer h3{
   list-style: none;
