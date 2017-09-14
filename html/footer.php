@@ -1,5 +1,5 @@
-<footer>
-  <div class="container hidden-xs">
+<footer class="navbar-default navbar-bottom">
+  <div class="container-fluid hidden-xs">
     <div class="row">
       <div class="col-sm-4">
         <h3>Get started</h3>
@@ -38,7 +38,7 @@
   </div>
   <div class="copyright">
     <div class="container">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <p>© 2017 - Todos los derechos reservados - Develope by #NeverPony!</p>
       </div>
     </div>
