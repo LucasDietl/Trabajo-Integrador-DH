@@ -20,7 +20,7 @@
 <!--     <div class="container">-->
 
 
-
+<div class="fondobody">
           <div class="container container-signupform">
                <div class="row">
                     <div class="col-xs-12 col-sm-8 col-md-8">
@@ -62,7 +62,7 @@
                </div>
           </div>
 
-<!--</div>-->
+</div>
 
      <!-- NOTE: Footer start -->
      <?php require_once("footer.php"); ?>

@@ -213,7 +213,7 @@ text-align: center;
 }
 
 .margen{
-  margin-bottom: 200px; 
+  margin-bottom: 200px;
 }
 /* NOTE: sign in end */
 
@@ -256,10 +256,19 @@ footer h3{
     border-top: 1px dotted #7f7f7f;
     color: #7f7f7f;
 }
+.fondobody2{
+  background-image: url("../images/shoelover.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
+}
 /* NOTE: FAQS ends */
 
 /* NOTE: signUp Starts*/
-
+.fondobody{
+  background-image: url("../images/base_2.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
+}
 .container-signupform {
      padding-top: 50px;
 }

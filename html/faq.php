@@ -16,7 +16,8 @@
     <!-- NOTE: Navbar start -->
     <?php require_once("navbar.php"); ?>
     <!-- NOTE: Navbar end -->
-       <div class="container">
+    <div class="fondobody2">
+       <div class="container margen">
          <header class="encabezadoFAQ">
            <h1>Preguntas Frecuentes</h1>
          </header>
@@ -133,7 +134,8 @@
           </div>
          </section>
        </div>
-      </div> 
+      </div>
+    </div>
    <!-- NOTE: Footer start -->
    <?php require_once("footer.php"); ?>
    <!-- NOTE: Footer end -->
