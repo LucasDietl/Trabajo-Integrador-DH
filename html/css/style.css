@@ -189,6 +189,10 @@ footer h3{
 
 /* NOTE: signUp Starts*/
 
+.container-signupform {
+     padding-top: 50px;
+}
+
 .form-control {
      width: 90%;
      height: 25px;
