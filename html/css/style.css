@@ -193,7 +193,7 @@ text-align: center;
 	color: white;
 }
 
-.form-control, placeholder {
+.form-control placeholder {
 	color: #ff3385;
 	font-size: 18px;
 }
@@ -219,6 +219,7 @@ footer{
   color: white;
   font-family: 'Sunshiney', cursive;
   font-size: 22px;
+  float: none;
 }
 footer ul, footer h3{
   list-style: none;
