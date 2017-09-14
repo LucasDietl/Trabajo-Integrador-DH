@@ -18,7 +18,7 @@
 
 
 <div class="container" >
-  <div class="row">
+  <div class="row margen">
     <div class="col-xs-12 col-sm-12 col-md-4">
 
       <form class="form-horizontal">

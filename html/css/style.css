@@ -211,6 +211,10 @@ text-align: center;
 	background-color: #e6005c;
 	box-shadow: 5px 5px 10px #4d001f;
 }
+
+.margen{
+  margin-bottom: 200px;
+}
 /* NOTE: sign in end */
 
 /* NOTE: footer start */

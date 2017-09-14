@@ -1,4 +1,4 @@
-<footer class="">
+<footer class="navbar navbar-default navbar-bottom" role="navigation">
   <div class="container-fluid hidden-xs">
     <div class="row">
       <div class="col-sm-4">
