@@ -147,6 +147,70 @@ text-align: center;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.signinbody {
+	background-image: url("../images/base_2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.form-horizontal {
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.form-signin-heading {
+	font-size: 2.6em;
+	font-family: Sunshiney;
+	color: white;
+}
+
+.recordarme {
+	font-family: Sunshiney;
+	font-size: 1.3em;
+	color: white;
+	line-height: 1em;
+}
+
+#inputEmail {
+	border: 1.3px solid white;
+	height: 45px;
+	box-shadow: none;
+	background-color: transparent;
+	margin-bottom: 7px;
+}
+
+#inputPassword {
+	border: 1.3px solid white;
+	height: 45px;
+	box-shadow: none;
+	background-color: transparent;
+	margin-bottom: 5px;
+}
+
+.form.control {
+	font-size: 17px;
+	color: white;
+}
+
+.form-control, placeholder {
+	color: #ff3385;
+	font-size: 18px;
+}
+
+.btn-primary {
+	margin-top: 10px;
+	font-size: 18px;
+	height: 45px;
+	background-color: #ff3385;
+	border: none;
+	border-radius: 4px;
+}
+
+.btn-primary:hover {
+	background-color: #e6005c;
+	box-shadow: 5px 5px 10px #4d001f;
+}
 /* NOTE: sign in end */
 
 /* NOTE: footer start */
