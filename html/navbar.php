@@ -2,7 +2,7 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -11,13 +11,13 @@
       <a class="navbar-brand logoname" href="home.php">THE<br>BLONDIE</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+    <div class="collapse navbar-collapse" id="navbar1">
       <ul class="nav navbar-nav">
         <li class="active"> <span class="sr-only">(current)</span></li>
-        <li><a href="home.php">Home</a></li>
-        <li><a href="signup.php">Sign Up</a></li>
-        <li><a href="signin.php">Log In</a></li>
+        <li><a href="home.php">Inicio</a></li>
+        <li><a href="signup.php">Registrarse</a></li>
+        <li><a href="signin.php">Iniciar Sesión</a></li>
         <li><a href="faq.php">FAQ</a></li>
       </ul>
       <form class="navbar-form navbar-right">
@@ -28,8 +28,8 @@
       </form>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

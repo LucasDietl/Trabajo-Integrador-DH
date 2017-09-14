@@ -219,8 +219,9 @@ footer{
   color: white;
   font-family: 'Sunshiney', cursive;
   font-size: 22px;
-  float: none;
-  bottom: 0;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+
 }
 footer ul, footer h3{
   list-style: none;
