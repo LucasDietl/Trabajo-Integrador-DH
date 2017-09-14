@@ -39,7 +39,7 @@
   <div class="copyright">
     <div class="container">
       <div class="col-md-12">
-        <p>© 2017 - Todos los derechos reservados - Develope by #NeverPony!</p>
+        <p>© 2017 - Todos los derechos reservados - Developed by #NeverPony!</p>
       </div>
     </div>
   </div>
