@@ -284,9 +284,10 @@ footer h3{
 }
 .signup-form{
      width: 100%;
-     background-color:  rgba(250, 0, 0, 0);
+     background-color:  rgba(0, 0, 0, 0);
      justify-content: space-between;
      margin: 10px;
+     transition: 1000ms;
 }
 
 .signup-form label{
@@ -303,11 +304,51 @@ footer h3{
 }
 
 .signup-form input{
+     background-color: rgba(255, 0, 0, 0.1);
      width: 90%;
      margin: -3px 0px 15px 10px;
      font-family: Sunshiney;
      font-size: 1.3em;
+     color: white;
+     transition: 300ms;
+     border-width: 1px;
+     height: 35px;
+
 }
+
+.signup-form input::placeholder{
+     color: rgba(255, 255, 255, 0.5);
+}
+
+.signup-form input:hover {
+     background-color: rgba(255, 255, 255, 0.5);
+     width: 90%;
+     margin: -2px -2px 13px 8px;
+     font-family: Sunshiney;
+     font-size: 1.3em;
+     color: white;
+     border-color: rgba(255, 92, 195, 1);
+     border-width: 2px;
+     height: 40px;
+     box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.5);
+     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.signup-form input:focus {
+     background-color: rgba(255, 255, 255, 0.5);
+     width: 90%;
+     margin: -3px 0px 15px 10px;
+     font-family: Sunshiney;
+     font-size: 1.3em;
+     color: white;
+     border-color: rgba(255, 92, 195, 1);
+     border-width: 2px;
+     box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.5);
+     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+     height: 40px;
+}
+
 
 .signup-form-boton {
      margin: 25px 3px 10px 10px !important;

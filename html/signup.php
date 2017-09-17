@@ -35,7 +35,7 @@
                               <h1 class="form-signin-heading">Registrese</h1>
 
                               <label for="usuario-nombre">Nombre:</label>
-                              <input class="form-control" type="text" name="usuario-nombre" value="" placeholder="Nombre" autofocus>
+                              <input class="form-control" type="text" name="usuario-nombre" value="" placeholder="Nombre" required autofocus>
 
                               <label for="usuario-apellido">Apellido:</label>
                               <input class="form-control" type="text" name="usuario-apellido" value="" placeholder="Apellido">
