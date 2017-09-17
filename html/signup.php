@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- NOTE: incluye el icono en la pestaña del navegador (Favicon)-->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
+
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney" rel="stylesheet">
 
@@ -19,58 +19,58 @@
      <?php require_once("navbar.php"); ?>
      <!-- NOTE: Navbar end -->
 
-<!--     <div class="container">-->
 
 
-<div class="">
-          <div class="container container-signupform">
 
-                    <!-- separador-->
-                    <div class="col-md-1">
-                    </div>
+     <div class="">
+               <div class="container container-signupform">
 
-                    <!--Formulario-->
-                    <div class="col-xs-12 col-sm-4 col-md-5">
+                         <!-- separador-->
+                         <div class="col-md-1">
+                         </div>
 
-                         <form class="signup-form" action="signup.php" method="post">
+                         <!--Formulario-->
+                         <div class="col-xs-12 col-sm-4 col-md-5">
 
-                              <h1 class="form-signin-heading">Registrese</h1>
+                              <form class="signup-form" action="signup.php" method="post">
 
-                              <p>Completá el formulario de abajo para recibir información sobre productos y nuevos lanzamientos.</br>
-                              También podremos enviarte ofertas personalizadas.</p>
+                                   <h1 class="form-signin-heading">Registrese</h1>
 
-                              <label for="usuario-nombre">Nombre:</label>
-                              <input class="form-control" type="text" name="usuario-nombre" value="" placeholder="Nombre" required autofocus>
+                                   <p>Completá el formulario de abajo para recibir información sobre productos y nuevos lanzamientos.</br>
+                                   También podremos enviarte ofertas personalizadas.</p>
 
-                              <label for="usuario-apellido">Apellido:</label>
-                              <input class="form-control" type="text" name="usuario-apellido" value="" placeholder="Apellido">
+                                   <label for="usuario-nombre">Nombre:</label>
+                                   <input class="form-control" type="text" name="usuario-nombre" value="" placeholder="Nombre" required autofocus>
 
-                              <!--<label for="usuario-sexo">Sexo</label>
-                              <input class="" type="radio" name="usuario-sexo" value="M">Masculíno
-                              <input class="" type="radio" name="usuario-sexo" value="F">Feminíno-->
+                                   <label for="usuario-apellido">Apellido:</label>
+                                   <input class="form-control" type="text" name="usuario-apellido" value="" placeholder="Apellido">
 
-                              <label for="usuario-fec-nac">Fecha de nacimiento</label>
-                              <input class="form-control" type="date" name="usuario-fec-nac" value="">
+                                   <!--<label for="usuario-sexo">Sexo</label>
+                                   <input class="" type="radio" name="usuario-sexo" value="M">Masculíno
+                                   <input class="" type="radio" name="usuario-sexo" value="F">Feminíno-->
 
-                              <label for="usuario-email">E-mail:</label>
-                              <input class="form-control" type="email" name="usuario-email" value="" placeholder="e-mail">
+                                   <label for="usuario-fec-nac">Fecha de nacimiento</label>
+                                   <input class="form-control" type="date" name="usuario-fec-nac" value="">
 
-                              <label for="usuario-email-confirm">Confirmar E-mail:</label>
-                              <input class="form-control" type="email" name="usuario-email-confirm" value="" placeholder="Confirmar e-mail">
+                                   <label for="usuario-email">E-mail:</label>
+                                   <input class="form-control" type="email" name="usuario-email" value="" placeholder="e-mail">
 
-                              <label for="usuario-pass">Password:</label>
-                              <input class="form-control" type="password" name="usuario-pass" value="" placeholder="Password">
+                                   <label for="usuario-email-confirm">Confirmar E-mail:</label>
+                                   <input class="form-control" type="email" name="usuario-email-confirm" value="" placeholder="Confirmar e-mail">
 
-                              <label for="usuario-pass-confirm">Confirmar Password:</label>
-                              <input class="form-control" type="password" name="usuario-pass-confirm" value="" placeholder="Confirmar password">
+                                   <label for="usuario-pass">Password:</label>
+                                   <input class="form-control" type="password" name="usuario-pass" value="" placeholder="Password">
 
-                              <input class="btnbuscar signup-form-boton" type="submit" name="" value="Confirmar">
-                              <input class="btnbuscar signup-form-boton" type="reset" name="" value="Borrar">
+                                   <label for="usuario-pass-confirm">Confirmar Password:</label>
+                                   <input class="form-control" type="password" name="usuario-pass-confirm" value="" placeholder="Confirmar password">
 
-                         </form>
-                    </div>
+                                   <input class="btnbuscar signup-form-boton" type="submit" name="" value="Confirmar">
+                                   <input class="btnbuscar signup-form-boton" type="reset" name="" value="Borrar">
 
-          </div>
+                              </form>
+                         </div>
+
+               </div>
 
 </div>
 
