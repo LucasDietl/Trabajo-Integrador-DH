@@ -194,7 +194,8 @@ text-align: center;
 }
 
 /* NOTE: esta clase hay que cambiarla */.form-control placeholder {
-	color: #ff3385;
+	/*color: #ff3385;*/
+     color: blue;
 	font-size: 18px;
 }
 
@@ -264,32 +265,53 @@ footer h3{
 /* NOTE: FAQS ends */
 
 /* NOTE: signUp Starts*/
-.fondobody{
+
+.container-signupform {
   background-image: url("../images/base_2.jpg");
   background-size: cover;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  width: 100%;
+
 }
-.container-signupform {
-     padding-top: 50px;
-}
+
 
 .form-control {
      width: 90%;
      height: 25px;
      padding: 6px 6px;
+     /*background-image: url("../images/brooke-cagle-70750.jpg");*/
+}
+.signup-form{
+     width: 100%;
+     background-color:  rgba(250, 0, 0, 0);
+     justify-content: space-between;
+     margin: 10px;
 }
 
 .signup-form label{
-     margin: 0px 0px 0px 0px;
+     margin: 0px 0px 0px 10px;
      font-size: 10px !important;
+     color: white;
 
 }
+
+.signup-form h1{
+     padding: 10px 10px 10px 10px;
+     /*font-size: 10px !important;*/
+
+}
+
 .signup-form input{
-     margin-top: -3px;
+     width: 90%;
+     margin: -3px 0px 15px 10px;
+     font-family: Sunshiney;
+     font-size: 1.3em;
 }
 
 .signup-form-boton {
-     margin: 10px 3px 0px 0px !important;
+     margin: 25px 3px 10px 10px !important;
+     width: 42% !important;
 }
 
 /* NOTE: signUp Ends*/

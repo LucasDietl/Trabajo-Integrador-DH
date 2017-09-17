@@ -20,18 +20,19 @@
 <!--     <div class="container">-->
 
 
-<div class="fondobody">
+<div class="">
           <div class="container container-signupform">
-               <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-md-8">
-                         <img src="images\zapatosvarios.jpg" alt="" height="100%" width="100%">
+
+                    <!-- separador-->
+                    <div class="col-md-1">
                     </div>
 
-
-
+                    <!--Formulario-->
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                         <h1>Registrese</h1>
-                         <form class="signup-form form-horizontal" action="signup.php" method="post">
+
+                         <form class="signup-form" action="signup.php" method="post">
+
+                              <h1 class="form-signin-heading">Registrese</h1>
 
                               <label for="usuario-nombre">Nombre:</label>
                               <input class="form-control" type="text" name="usuario-nombre" value="" placeholder="Nombre" autofocus>
@@ -55,11 +56,11 @@
                               <input class="form-control" type="password" name="usuario-pass-confirm" value="" placeholder="Confirmar password">
 
                               <input class="btnbuscar signup-form-boton" type="submit" name="" value="Enviar">
-                              <input class="btnbuscar" type="reset" name="" value="Borrar">
+                              <input class="btnbuscar signup-form-boton" type="reset" name="" value="Borrar">
 
                          </form>
                     </div>
-               </div>
+
           </div>
 
 </div>
