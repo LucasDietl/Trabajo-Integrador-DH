@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- NOTE: incluye el icono en la pestaña del navegador (Favicon)-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney" rel="stylesheet">
