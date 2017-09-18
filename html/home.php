@@ -13,7 +13,7 @@
 
     <title>The Blondie - Shoes</title>
   </head>
-<body>
+<body class="bgcolorhome">
 
      <!-- NOTE: Navbar start -->
      <?php require_once("navbar.php"); ?>
@@ -60,21 +60,21 @@
             <div class="col-xs-12 col-sm-4 col-md-2 growup ">
               <div class="panel panel-danger">
                 <div class="panel-heading">Promo!!</div>
-                <div class="panel-body"><img src="images/zapatosvarios.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="images/piernasyzapatos.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
                 <div class="panel-footer">2x1 en la compra de cualquier par de zapatos</div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2 growup ">
               <div class="panel panel-danger">
                 <div class="panel-heading">Promo!!</div>
-                <div class="panel-body"><img src="images/zapatosvarios.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="images/pink.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
                 <div class="panel-footer">2x1 en la compra de cualquier par de zapatos</div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2 growup ">
               <div class="panel panel-danger">
                 <div class="panel-heading">Promo!!</div>
-                <div class="panel-body"><img src="images/zapatosvarios.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="images/blackwhite.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
                 <div class="panel-footer">2x1 en la compra de cualquier par de zapatos</div>
               </div>
             </div>
@@ -114,21 +114,21 @@
             <div class="col-xs-12 col-sm-4 col-md-2 growup ">
               <div class="panel panel-danger">
                 <div class="panel-heading">Promo!!</div>
-                <div class="panel-body"><img src="images/pink.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="images/zapatostemporada.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
                 <div class="panel-footer">2x1 en la compra de cualquier par de zapatos</div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2 growup ">
               <div class="panel panel-danger">
                 <div class="panel-heading">Promo!!</div>
-                <div class="panel-body"><img src="images/pink.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="images/skate.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
                 <div class="panel-footer">2x1 en la compra de cualquier par de zapatos</div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2 growup ">
               <div class="panel panel-danger">
                 <div class="panel-heading">Promo!!</div>
-                <div class="panel-body"><img src="images/pink.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="images/zapatonegro.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
                 <div class="panel-footer">2x1 en la compra de cualquier par de zapatos</div>
               </div>
             </div>

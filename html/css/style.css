@@ -72,6 +72,9 @@ nav div ul li a{
 /* NOTE: navbar end */
 
 /* NOTE: Contenido home Start */
+.bgcolorhome{
+  background-color: rgba(230, 214, 144,0.2);
+}
 .slideimages{
   margin-top: 50px; /* NOTE: este margen es para que todo lo que pongas debajo del navbar no sea tapado por el mismo */
 }
@@ -407,7 +410,10 @@ footer h3{
   }
 }
 /* NOTE: probando animaciones end */
-@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 768px) { /* NOTE: basicamente este media query es para pantallas pequeñas */
   /* NOTE: Home start */
   .growup:hover{
     -webkit-transform:  scaleX(1) scaleY(1)  ;
