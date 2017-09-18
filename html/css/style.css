@@ -55,6 +55,20 @@ nav div ul li a{
   text-decoration: none;
   color: #ffffff;
 }
+.growup{
+    overflow: hidden;
+    border: none;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    z-index: 0;
+  }
+
+  .growup:hover {
+    -webkit-transform:  scaleX(1.2) scaleY(1.2)  ;
+    transform:  scaleX(1.2) scaleY(1.2)  ;
+    z-index: 1;
+  }
 /* NOTE: navbar end */
 
 /* NOTE: Contenido home Start */
@@ -393,3 +407,11 @@ footer h3{
   }
 }
 /* NOTE: probando animaciones end */
+@media screen and (max-width: 768px) {
+  /* NOTE: Home start */
+  .growup:hover{
+    -webkit-transform:  scaleX(1) scaleY(1)  ;
+    transform:  scaleX(1) scaleY(1)  ;
+      }
+  /* NOTE: Home End */
+}
