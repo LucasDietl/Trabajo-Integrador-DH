@@ -22,31 +22,33 @@
 
 <div class="container" >
   <div class="row margen">
-    <div class="col-xs-12 col-sm-12 col-md-4">
+    <div class="col-xs-12 col-sm-4 col-md-4">
 
       <form class="form-horizontal">
-      <div class="form-group">
+        <div class="form-group">
 
-        <h2 class="form-signin-heading">Sign in</h2>
+          <h2 class="form-signin-heading">Sign in</h2>
 
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electronico" required autofocus>
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electronico" required autofocus>
 
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
 
-        <div class="checkbox">
+          <div class="checkbox">
           <label class="recordarme">
-            <input type="checkbox" value="remember-me">Recordarme</label>
+          <input type="checkbox" value="remember-me">Recordarme</label>
+          </div>
+
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        
         </div>
+      </form>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        </form>
-
-      </div>
     </div>
   </div>
 </div>
+
 
     <!-- NOTE: Footer start -->
     <?php require_once("footer.php"); ?>
