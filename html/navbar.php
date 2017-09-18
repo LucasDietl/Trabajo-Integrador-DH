@@ -15,9 +15,9 @@
     <div class="collapse navbar-collapse" id="navbar1">
       <ul class="nav navbar-nav">
         <li class="active"> <span class="sr-only">(current)</span></li>
-        <li><a href="home.php">Inicio</a></li>
-        <li><a href="signup.php">Registrarse</a></li>
-        <li><a href="signin.php">Iniciar Sesión</a></li>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="signup.php">Sign Up</a></li>
+        <li><a href="signin.php">Sign In</a></li>
         <li><a href="faq.php">FAQ</a></li>
       </ul>
       <form class="navbar-form navbar-right">
