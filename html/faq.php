@@ -19,7 +19,7 @@
     <?php require_once("navbar.php"); ?>
     <!-- NOTE: Navbar end -->
     <div class="fondobody2">
-       <div class="container margen">
+       <div class="container margenfaq">
          <header class="encabezadoFAQ">
            <h1>Preguntas Frecuentes</h1>
          </header>
