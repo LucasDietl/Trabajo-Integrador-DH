@@ -7,7 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- NOTE: incluye el icono en la pestaña del navegador (Favicon)-->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
+
     <meta name="viewport"content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,7 +20,7 @@
 
 
 
-<div class="container" >
+<div class="container altominimo" >
   <div class="row margen">
     <div class="col-xs-12 col-sm-4 col-md-4">
 
@@ -41,7 +41,7 @@
           </div>
 
           <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        
+
         </div>
       </form>
 
