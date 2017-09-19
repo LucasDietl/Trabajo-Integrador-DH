@@ -5,8 +5,8 @@
         <h3>Get started</h3>
         <ul>
           <li><a href="home.php">Inicio</a></li>
-          <li><a href="signin.php">Registrarse</a></li>
-          <li><a href="signup.php">Iniciar sesión</a></li>
+          <li><a href="signup.php">Registrarse</a></li>
+          <li><a href="signin.php">Iniciar sesión</a></li>
         </ul>
       </div>
       <div class="col-sm-4">
