@@ -1,3 +1,66 @@
+<?php
+
+require_once("funciones.php");
+$meses = [
+    1 => "Enero", 2 => "Febrero", 3 => "Marzo", 4 => "Abril", 5 => "Mayo", 6 => "Junio",
+    7 => "Julio", 8 => "Agosto", 9 => "Septiembre", 10 => "Octubre", 11 => "Noviembre", 12 => "Diciembre"
+];
+
+$nombre = $_POST["nombre"] ?? null;
+$apellido = isset($_POST["apellido"]) ? $_POST["apellido"] : null;
+$username = isset($_POST["username"]) ? $_POST["username"] : null;
+$email = isset($_POST["email"]) ? $_POST["email"] : null;
+$email_confirm = isset($_POST["email_confirm"]) ? $_POST["email_confirm"] : null;
+$contrasena = isset($_POST["contrasena"]) ? $_POST["contrasena"] : null;
+$contrasena_confirm = isset($_POST["contrasena_confirm"]) ? $_POST["contrasena_confirm"] : null;
+$genero = isset($_POST["genero"]) ? $_POST["genero"] : null;
+$dia = $_POST["fnac_dia"] ?? null;
+$messel = $_POST["fnac_mes"] ?? null;
+$anio = $_POST["fnac_anio"] ?? null;
+$cats = $_POST['categorias'] ?? [];
+$descripcion = isset($_POST["descripcion"]) ? $_POST["descripcion"] : null;
+$arrayDeErrores = [];
+
+
+if($_POST)
+{
+
+    $arrayDeErrores = validarDatos();
+
+    if(count($arrayDeErrores) == 0) {
+
+      $archivo = $_FILES["avatar"]["tmp_name"];
+      $nombreDelArchivo = $_FILES["avatar"]["name"];
+      $extension = pathinfo($nombreDelArchivo,PATHINFO_EXTENSION);
+
+      $nombre = dirname(__FILE__) . "/img/" . $_POST["username"] . ".$extension";
+
+      move_uploaded_file($archivo, $nombre);
+      $usuarioOk =validarLogin($_POST);
+      guardarUsuario($usuarioOk);
+
+
+
+      header("Location:home.php");exit;
+    }
+}
+
+?>
+
+
+<?php
+
+        var_dump($_POST);
+        var_dump($_FILES);
+
+          if(isset($arrayDeErrores)!= ""){
+            foreach ($arrayDeErrores as $error) { ?>
+              <ul>
+                <li style="color:blue;"><?php  echo "$error";?></li>
+              </ul>
+          <?php  }
+           }?>
+
 <!DOCTYPE html>
 <html>
   <head>
