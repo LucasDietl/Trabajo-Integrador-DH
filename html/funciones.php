@@ -76,7 +76,7 @@ function validarInformacion() {
   }
 
 }
-function validarLogin($datos){
+function armarUsuario($datos){
     return [
       "usuario-nombre" => $datos["usuario-nombre"],
       "usuario-apellido" => $datos["usuario-apellido"],

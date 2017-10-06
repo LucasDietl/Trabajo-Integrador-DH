@@ -23,7 +23,7 @@ $arrayDeErrores = [];
 if($_POST)
 {
 
-    $arrayDeErrores = validarDatos();
+    $arrayDeErrores = validarInformacion();
 
     if(count($arrayDeErrores) == 0) {
 

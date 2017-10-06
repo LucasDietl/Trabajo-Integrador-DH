@@ -1,11 +1,10 @@
 <?php
+require_once("funciones.php");
 
 
 if (estaLogueado()) {
-  header("Location:miPerfil.php");exit;
+  header("Location:resultado.php");exit;
 }
-
-$title = 'Sign In';
 
 $arrayDeErrores = [];
 
@@ -64,9 +63,8 @@ if ($_POST) {
 
           <div class="checkbox">
           <label class="recordarme">
-          <input type="checkbox" value="remember-me">Recordarme</label>
+          <input type="checkbox" value="recordame">Recordarme</label>
           </div>
-
           <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
 
         </div>

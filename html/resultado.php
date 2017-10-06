@@ -1,7 +1,7 @@
 <?php
 
 require_once("funciones.php");
-
+traerTodos();
 $email = $_GET["usuario-email"];
 
 $usuario = traerPorEmail($email);
