@@ -1,4 +1,30 @@
+<?php
 
+
+if (estaLogueado()) {
+  header("Location:miPerfil.php");exit;
+}
+
+$title = 'Sign In';
+
+$arrayDeErrores = [];
+
+if ($_POST) {
+  $arrayDeErrores = validarLogin();
+
+  if (count($arrayDeErrores) == 0) {
+    loguear($_POST["usuario-email"]);
+    if (isset($_POST["recordame"])) {
+      recordar($_POST["usuario-email"]);
+    }
+
+    header("Location:resultado.php");exit;
+  }
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
   <head>

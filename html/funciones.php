@@ -1,53 +1,75 @@
 <?php
-function validarDatos() {
+session_start();
+
+if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
+  loguear($_COOKIE["usuarioLogueado"]);
+}
+
+function validarLogin() {
+  $arrayDeErrores= [];
+  if($_POST["usuario-email"] == "") {
+    $arrayDeErrores["usuario-email"] = "Che, te equivocaste en el email";
+  }
+  else if (filter_var($_POST["usuario-email"], FILTER_VALIDATE_EMAIL) == false) {
+    $arrayDeErrores["usuario-email"] = "Che, el formato del mail es cualquiera";
+  }
+  else if (traerPorEmail($_POST["usuario-email"]) == NULL) {
+    $arrayDeErrores["usuario-email"] = "El usuario no ha sido encontrado";
+  }
+  else {
+    if (strlen($_POST["usuario-pass"]) < 8) {
+      $arrayDeErrores["usuario-pass"] = "Necesito que tu contraseña tenga al menos 8 caracteres";
+    }
+    else {
+      $usuario = traerPorEmail($_POST["usuario-email"]);
+
+      if (password_verify($_POST["usuario-pass"],$usuario["usuario-pass"]) == false) {
+        $arrayDeErrores[] = "La contraseña no coincide";
+      }
+    }
+  }
+  return $arrayDeErrores;
+}
+
+function validarInformacion() {
   $sumaDeErrores=[];
-  $nombreDelArchivo = $_FILES["avatar"]["name"];
-  $extension = pathinfo($nombreDelArchivo,PATHINFO_EXTENSION);
+
   if($_POST) {
 
-    if($_FILES["avatar"]["error"] != UPLOAD_ERR_OK) {
-      $sumaDeErrores["avatar"] = "Hubo un error al subir el archivo";
+    if($_POST["usuario-nombre"]==""){
+      $sumaDeErrores["usuario-nombre"]= "No te olvides de poner el nombre" ;
     }
-    else if ($extension != "jpg" && $extension != "jpeg" && $extension != "gif" && $extension !=  "png") {
-      $sumaDeErrores["avatar"] = "Necesitamos que el avatar sea una foto";
+    if($_POST["usuario-apellido"]==""){
+      $sumaDeErrores["usuario-apellido"]= "No te olvides de poner el apellido" ;
     }
+    //if($_POST["username"]==""){
+    //  $sumaDeErrores["username"]= "No te olvides de poner el Username" ;
+    //}
+    if($_POST["usuario-email"]==""){
+      $sumaDeErrores["usuario-email"]= "No te olvides de poner el email";
 
+    }elseif((filter_var($_POST["usuario-email"], FILTER_VALIDATE_EMAIL) == false)) {
+      $sumaDeErrores["usuario-email"]= "El mail debe conterner este formato ejemplo@algo.com";
 
-
-    if($_POST["nombre"]==""){
-      $sumaDeErrores["nombre"]= "No te olvides de poner el nombre" ;
+    }elseif($_POST["usuario-email"]!=$_POST["usuario-email-confirm"]){
+      $sumaDeErrores["usuario-email"]= "Ambos email deben coincicir";
     }
-    if($_POST["apellido"]==""){
-      $sumaDeErrores["apellido"]= "No te olvides de poner el apellido" ;
+    if (strlen($_POST["usuario-pass"]) < 8) {
+      $sumaDeErrores["usuario-pass"] = "Necesito que tu contraseña tenga al menos 8 caracteres";
     }
-    if($_POST["username"]==""){
-      $sumaDeErrores["username"]= "No te olvides de poner el Username" ;
+    else if (preg_match('/[A-Z]/', $_POST["usuario-pass"]) == false) {
+      $sumaDeErrores["usuario-pass"] = "Necesito que tu contraseña tenga al menos 1 mayuscula";
+    }elseif ($_POST["usuario-pass"]!=$_POST["usuario-pass-confirm"]){
+      $sumaDeErrores["usuario-pass-confirm"] = "Ambas conraseñas no coinciden";
     }
-    if($_POST["email"]==""){
-      $sumaDeErrores["email"]= "No te olvides de poner el email";
-
-    }elseif((filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false)) {
-      $sumaDeErrores["email"]= "El mail debe conterner este formato ejemplo@algo.com";
-
-    }elseif($_POST["email"]!=$_POST["email_confirm"]){
-      $sumaDeErrores["email"]= "Ambos email deben coincicir";
-    }
-    if (strlen($_POST["contrasena"]) < 8) {
-      $sumaDeErrores["contrasena"] = "Necesito que tu contraseña tenga al menos 8 caracteres";
-    }
-    else if (preg_match('/[A-Z]/', $_POST["contrasena"]) == false) {
-      $sumaDeErrores["contrasena"] = "Necesito que tu contraseña tenga al menos 1 mayuscula";
-    }elseif ($_POST["contrasena"]!=$_POST["contrasena_confirm"]){
-      $sumaDeErrores["contrasena_confirm"] = "Ambas conraseñas no coinciden";
-    }
-    if(isset($_POST["genero"])==null){
-      $sumaDeErrores["genero"]= "No te de seleccionar tu genero" ;
-    }
-    if(($_POST["fnac_dia"] == "") || ($_POST["fnac_mes"] == "") || ($_POST["fnac_anio"]=="")){
+    //if(isset($_POST["genero"])==null){
+      //$sumaDeErrores["genero"]= "No te de seleccionar tu genero" ;
+    //}
+    /*if(($_POST["fnac_dia"] == "") || ($_POST["fnac_mes"] == "") || ($_POST["fnac_anio"]=="")){
       $sumaDeErrores["fnac_dia"]= "Seleciona dia mes y año de nacimiento por favor" ;
     }elseif (date('Y')-($_POST["fnac_anio"])<18) {
       $sumaDeErrores["fnac_anio"]= "Debe ser mayor de 18 para registrarse" ;
-    }
+    }*/
 
 
      return $sumaDeErrores;
@@ -56,15 +78,15 @@ function validarDatos() {
 }
 function validarLogin($datos){
     return [
-      "nombre" => $datos["nombre"],
-      "apellido" => $datos["apellido"],
-      "username" => $datos["username"],
-      "email" => $datos["email"],
-      "contrasenia" => password_hash($datos["contrasena"], PASSWORD_DEFAULT),
-      "genero" => $datos["genero"],
-      "fnac" => $datos["fnac_dia"] . "-" . $datos["fnac_mes"] . "-" . $datos["fnac_anio"],
-      "categorias" => $datos["categorias"],
-      "descripcion" => $datos["descripcion"]
+      "usuario-nombre" => $datos["usuario-nombre"],
+      "usuario-apellido" => $datos["usuario-apellido"],
+      //"username" => $datos["username"],
+      "usuario-email" => $datos["usuario-email"],
+      "usuario-pass" => password_hash($datos["usuario-pass"], PASSWORD_DEFAULT),
+      //"genero" => $datos["genero"],
+      //"fnac" => $datos["fnac_dia"] . "-" . $datos["fnac_mes"] . "-" . $datos["fnac_anio"],
+      //"categorias" => $datos["categorias"],
+      //"descripcion" => $datos["descripcion"]
     ];
   }
 function guardarUsuario($usuario) {
@@ -91,7 +113,7 @@ function traerPorEmail($email) {
   while ($linea != false) {
     $usuario = json_decode($linea, true);
 
-    if ($usuario["email"] == $email) {
+    if ($usuario["usuario-email"] == $email) {
       return $usuario;
     }
 
@@ -101,5 +123,34 @@ function traerPorEmail($email) {
 
   return null;
 }
+function loguear($email) {
+  $_SESSION["usuarioLogueado"] = $email;
+}
 
+function logout() {
+  session_destroy();
+  setcookie("usuarioLogueado", "", -1);
+}
+
+function estaLogueado() {
+  if (isset($_SESSION["usuarioLogueado"])) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+function getUsuarioLogueado() {
+  if (estaLogueado()) {
+    return traerPorEmail($_SESSION["usuarioLogueado"]);
+  }
+  else {
+    return NULL;
+  }
+}
+
+function recordar($email) {
+  setcookie("usuarioLogueado", $email, time()+3600);
+}
 ?>

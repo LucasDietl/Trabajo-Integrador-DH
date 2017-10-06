@@ -1,24 +1,22 @@
 <?php
 
 require_once("funciones.php");
-$meses = [
+/*$meses = [
     1 => "Enero", 2 => "Febrero", 3 => "Marzo", 4 => "Abril", 5 => "Mayo", 6 => "Junio",
     7 => "Julio", 8 => "Agosto", 9 => "Septiembre", 10 => "Octubre", 11 => "Noviembre", 12 => "Diciembre"
-];
+];*/
 
-$nombre = $_POST["nombre"] ?? null;
-$apellido = isset($_POST["apellido"]) ? $_POST["apellido"] : null;
-$username = isset($_POST["username"]) ? $_POST["username"] : null;
-$email = isset($_POST["email"]) ? $_POST["email"] : null;
-$email_confirm = isset($_POST["email_confirm"]) ? $_POST["email_confirm"] : null;
-$contrasena = isset($_POST["contrasena"]) ? $_POST["contrasena"] : null;
-$contrasena_confirm = isset($_POST["contrasena_confirm"]) ? $_POST["contrasena_confirm"] : null;
-$genero = isset($_POST["genero"]) ? $_POST["genero"] : null;
-$dia = $_POST["fnac_dia"] ?? null;
-$messel = $_POST["fnac_mes"] ?? null;
-$anio = $_POST["fnac_anio"] ?? null;
-$cats = $_POST['categorias'] ?? [];
-$descripcion = isset($_POST["descripcion"]) ? $_POST["descripcion"] : null;
+$nombre = $_POST["usuario-nombre"] ?? null; // nombre
+$apellido = isset($_POST["usuario-apellido"]) ? $_POST["usuario-apellido"] : null; //apellido
+//$username = isset($_POST["username"]) ? $_POST["username"] : null; //username
+$email = isset($_POST["usuario-email"]) ? $_POST["usuario-email"] : null; //email
+$email_confirm = isset($_POST["usuario-email-confirm"]) ? $_POST["usuario-email-confirm"] : null; //email_confirm
+$contrasena = isset($_POST["usuario-pass"]) ? $_POST["usuario-pass"] : null; //contrasena
+$contrasena_confirm = isset($_POST["usuario-pass-confirm"]) ? $_POST["usuario-pass-confirm"] : null; //contrasena_confirm
+//$genero = isset($_POST["genero"]) ? $_POST["genero"] : null; // genero
+//$dia = $_POST["fnac_dia"] ?? null;  // fnac_dia
+//$messel = $_POST["fnac_mes"] ?? null; // fnac_mes
+//$anio = $_POST["fnac_anio"] ?? null;// fnac_anio
 $arrayDeErrores = [];
 
 
@@ -29,19 +27,12 @@ if($_POST)
 
     if(count($arrayDeErrores) == 0) {
 
-      $archivo = $_FILES["avatar"]["tmp_name"];
-      $nombreDelArchivo = $_FILES["avatar"]["name"];
-      $extension = pathinfo($nombreDelArchivo,PATHINFO_EXTENSION);
-
-      $nombre = dirname(__FILE__) . "/img/" . $_POST["username"] . ".$extension";
-
-      move_uploaded_file($archivo, $nombre);
       $usuarioOk =validarLogin($_POST);
       guardarUsuario($usuarioOk);
 
 
 
-      header("Location:home.php");exit;
+      header("Location:resultado.php");exit;
     }
 }
 
