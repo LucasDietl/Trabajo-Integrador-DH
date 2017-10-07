@@ -1,3 +1,4 @@
+<?php require_once("funciones.php");?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,6 +14,11 @@
 
     <title>The Blondie - Shoes</title>
   </head>
+  <?php 
+  if($_GET["button"]){
+    logout();
+  };
+   ?>
 <body class="bgcolorhome">
 
      <!-- NOTE: Navbar start -->

@@ -20,11 +20,12 @@
         <li><a href="signin.php">Sign In</a></li>
         <li><a href="faq.php">FAQ</a></li>
       </ul>
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text" class="form-control borderedondo" placeholder="Ingrese aqui su busqueda">
+
+      <form class="navbar-form navbar-right" method="get" action="home.php">
+           <div class="form-group">
+           <?php // NOTE:  <input type="text" class="form-control borderedondo" placeholder="Ingrese aqui su busqueda">?>
         </div>
-        <button type="submit" class="btn btnbuscar">Buscar</button>
+        <button type="submit" class="btn btnbuscar" name="button" value="out">Cerrar Sesión</button>
       </form>
         </li>
       </ul>

@@ -1,10 +1,10 @@
 <?php
 require_once("funciones.php");
-
-
 if (estaLogueado()) {
-  header("Location:resultado.php");exit;
+  header("Location:miPerfil.php");exit;
 }
+
+$title = 'LOGIN';
 
 $arrayDeErrores = [];
 
@@ -12,17 +12,15 @@ if ($_POST) {
   $arrayDeErrores = validarLogin();
 
   if (count($arrayDeErrores) == 0) {
-    loguear($_POST["usuario-email"]);
+    loguear($_POST["email"]);
     if (isset($_POST["recordame"])) {
-      recordar($_POST["usuario-email"]);
+      recordar($_POST["email"]);
     }
 
-    header("Location:resultado.php");exit;
+    header("Location:miPerfil.php");exit;
   }
 
 }
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,26 +42,34 @@ if ($_POST) {
     <?php require_once("navbar.php"); ?>
     <!-- NOTE: Navbar end -->
 
-
+    <?php if (count($arrayDeErrores) > 0) : ?>
+      <ul style="color:red;">
+          <?php foreach($arrayDeErrores as $error) : ?>
+            <li>
+              <?=$error?>
+            </li>
+          <?php endforeach; ?>
+      </ul>
+    <?php endif;?>
 
 <div class="container altominimo" >
   <div class="row margen">
     <div class="col-xs-12 col-sm-4 col-md-4">
 
-      <form class="form-horizontal">
+      <form class="form-horizontal"role="form" action="signin.php" method="post">
         <div class="form-group">
 
           <h2 class="form-signin-heading">Sign in</h2>
 
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electronico" required autofocus>
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Correo Electronico" required autofocus>
 
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+          <label for="contrasena" class="sr-only">Password</label>
+          <input type="password" id="contrasena" name="contrasena" class="form-control" placeholder="Contraseña" required>
 
           <div class="checkbox">
           <label class="recordarme">
-          <input type="checkbox" value="recordame">Recordarme</label>
+          <input type="checkbox" name="recordame" value="1">Recordarme</label>
           </div>
           <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
 

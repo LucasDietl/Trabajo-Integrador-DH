@@ -8,17 +8,17 @@ if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
 function validarLogin() {
   $arrayDeErrores= [];
   if($_POST["email"] == "") {
-    $arrayDeErrores["email"] = "Che, te equivocaste en el email";
+    $arrayDeErrores["email"] = "Por favor ingrese su email";
   }
   else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
-    $arrayDeErrores["email"] = "Che, el formato del mail es cualquiera";
+    $arrayDeErrores["email"] = "El formato del email no es valido";
   }
   else if (traerPorEmail($_POST["email"]) == NULL) {
     $arrayDeErrores["email"] = "El usuario no ha sido encontrado";
   }
   else {
     if (strlen($_POST["contrasena"]) < 8) {
-      $arrayDeErrores["contrasena"] = "Necesito que tu contraseña tenga al menos 8 caracteres";
+      $arrayDeErrores["contrasena"] = "Su contraseña debe ser de por lo menos 8 caracteres";
     }
     else {
       $usuario = traerPorEmail($_POST["email"]);
@@ -41,24 +41,26 @@ function validarInformacion() {
     $arrayDeErrores["avatar"] = "Hubo un error al subir el archivo";
   }
   else if ($extension != "jpg" && $extension != "jpeg" && $extension != "gif" && $extension !=  "png") {
-    $arrayDeErrores["avatar"] = "Necesitamos que el avatar sea una foto";
+    $arrayDeErrores["avatar"] = "Los formato de foto aceptados son (.jpg/.jpeg, .gif y .png)";
   }
 
 
   if($_POST["nombre"] == "") {
-    $arrayDeErrores["nombre"] = "Che, te equivocaste en el nombre";
+    $arrayDeErrores["nombre"] = "Por favor inrese su nombre";
   }
 
   if($_POST["email"] == "") {
-    $arrayDeErrores["email"] = "Che, te equivocaste en el email";
+    $arrayDeErrores["email"] = "Por favor inrese su email";
   }
   else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
-    $arrayDeErrores["email"] = "Che, el formato del mail es cualquiera";
+    $arrayDeErrores["email"] = "El formato del email no es valido";
   }
   else if (traerPorEmail($_POST["email"]) != NULL) {
-    $arrayDeErrores["email"] = "Che, el mail ya existia";
+    $arrayDeErrores["email"] = "Ya existe un usuario registrado con el email ingresado";
   }
-
+  if($_POST["username"] == "") {
+    $arrayDeErrores["username"] = "Por favor inrese su nombre de usuario";
+  }
   if (strlen($_POST["contrasena"]) < 8) {
     $arrayDeErrores["contrasena"] = "Necesito que tu contraseña tenga al menos 8 caracteres";
   }
@@ -67,7 +69,7 @@ function validarInformacion() {
   }
   else if ($_POST["contrasena"] != $_POST["contrasena_confirm"])
   {
-    $arrayDeErrores["contrasena"] = "Las dos contraseñas no verifican";
+    $arrayDeErrores["contrasena"] = "Las dos contraseñas no coinciden";
   }
 
 
@@ -82,9 +84,7 @@ function armarUsuario($datos)  {
     "email" => $datos["email"],
     "contrasenia" => password_hash($datos["contrasena"], PASSWORD_DEFAULT),
     "genero" => $datos["genero"],
-    "f_nac" => $datos["fnac_dia"] . "-" . $datos["fnac_mes"] . "-" . $datos["fnac_anio"],
-    "categorias" => $datos["categorias"],
-    "descripcion" => $datos["descripcion"]
+    "f_nac" => $datos["fnac_dia"] . "-" . $datos["fnac_mes"] . "-" . $datos["fnac_anio"]
   ];
 }
 

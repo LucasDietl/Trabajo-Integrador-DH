@@ -1,25 +1,37 @@
 <?php
 
 require_once("funciones.php");
-/*$meses = [
+if (estaLogueado()) {
+  header("Location:miPerfil.php");exit;
+}
+$meses = [
     1 => "Enero", 2 => "Febrero", 3 => "Marzo", 4 => "Abril", 5 => "Mayo", 6 => "Junio",
     7 => "Julio", 8 => "Agosto", 9 => "Septiembre", 10 => "Octubre", 11 => "Noviembre", 12 => "Diciembre"
-];*/
+];
 
-$nombre = $_POST["usuario-nombre"] ?? null; // nombre
-$apellido = isset($_POST["usuario-apellido"]) ? $_POST["usuario-apellido"] : null; //apellido
-//$username = isset($_POST["username"]) ? $_POST["username"] : null; //username
-$email = isset($_POST["usuario-email"]) ? $_POST["usuario-email"] : null; //email
-$email_confirm = isset($_POST["usuario-email-confirm"]) ? $_POST["usuario-email-confirm"] : null; //email_confirm
-$contrasena = isset($_POST["usuario-pass"]) ? $_POST["usuario-pass"] : null; //contrasena
-$contrasena_confirm = isset($_POST["usuario-pass-confirm"]) ? $_POST["usuario-pass-confirm"] : null; //contrasena_confirm
-//$genero = isset($_POST["genero"]) ? $_POST["genero"] : null; // genero
-//$dia = $_POST["fnac_dia"] ?? null;  // fnac_dia
-//$messel = $_POST["fnac_mes"] ?? null; // fnac_mes
-//$anio = $_POST["fnac_anio"] ?? null;// fnac_anio
+$categorias = [
+    ['id' => 1, 'nombre' => 'Historia'],
+    ['id' => 2, 'nombre' => 'Geografía'],
+    ['id' => 3, 'nombre' => 'Deportes'],
+    ['id' => 4, 'nombre' => 'Arte'],
+    ['id' => 5, 'nombre' => 'Ciencia'],
+    ['id' => 6, 'nombre' => 'Espectaculos'],
+];
+
+
+$nombre = $_POST['nombre'] ?? null;
+$apellido = $_POST['apellido'] ?? null;
+$username = $_POST['username'] ?? null;
+$email = $_POST['email'] ?? null;
+$emailConfirm = $_POST['email_confirm'] ?? null;
+$genero = $_POST['genero'] ?? null;
+$dia = $_POST['fnac_dia'] ?? null;
+$mes = $_POST['fnac_mes'] ?? null;
+$anio = $_POST['fnac_anio'] ?? null;
+
+
+
 $arrayDeErrores = [];
-
-
 if($_POST)
 {
 
@@ -27,30 +39,22 @@ if($_POST)
 
     if(count($arrayDeErrores) == 0) {
 
-      $usuarioOk =validarLogin($_POST);
-      guardarUsuario($usuarioOk);
+      $usuario = armarUsuario($_POST);
+      guardarUsuario($usuario);
 
+      $archivo = $_FILES["avatar"]["tmp_name"];
+      $nombreDelArchivo = $_FILES["avatar"]["name"];
+      $extension = pathinfo($nombreDelArchivo,PATHINFO_EXTENSION);
 
+      $nombre = dirname(__FILE__) . "/img/" . $_POST["username"] . ".$extension";
 
-      header("Location:resultado.php");exit;
+      move_uploaded_file($archivo, $nombre);
+
+      header("Location:home.php");exit;
     }
 }
 
 ?>
-
-
-<?php
-
-        var_dump($_POST);
-        var_dump($_FILES);
-
-          if(isset($arrayDeErrores)!= ""){
-            foreach ($arrayDeErrores as $error) { ?>
-              <ul>
-                <li style="color:blue;"><?php  echo "$error";?></li>
-              </ul>
-          <?php  }
-           }?>
 
 <!DOCTYPE html>
 <html>
@@ -85,8 +89,130 @@ if($_POST)
 
                          <!--Formulario-->
                          <div class="col-xs-12 col-sm-4 col-md-5">
+                           <div class="row">
+                               <?php if (count($arrayDeErrores) > 0) : ?>
+                                 <ul style="color:red;">
+                                     <?php foreach($arrayDeErrores as $error) : ?>
+                                       <li>
+                                         <?=$error?>
+                                       </li>
+                                     <?php endforeach; ?>
+                                 </ul>
+                               <?php endif;?>
+                               <form role="form" action="signup.php" method="post" enctype="multipart/form-data">
+                                   <div class="row">
+                                       <div class="form-group col-sm-6">
+                                           <label for="nombre">Nombre</label>
+                                           <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $nombre; ?>" placeholder="Ingrese Nombre">
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                           <label for="apellido">Apellido</label>
+                                           <input type="text" class="form-control" id="apellido" name="apellido" value="<?php echo $apellido; ?>" placeholder="Ingrese Apellido">
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="form-group col-sm-6">
+                                           <label for="username">Nombre de Usuario</label>
+                                           <input type="text" class="form-control" id="username" name="username" value="<?php echo $username; ?>" placeholder="Ingrese Nombre de Usuario">
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="form-group col-sm-6">
+                                           <label for="email">Email</label>
+                                           <input type="text" class="form-control" id="email" name="email" value="<?php echo $email; ?>" placeholder="Ingrese Email">
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                           <label for="email-confirm">Confirmar Email</label>
+                                           <input type="text" class="form-control" id="email-confirm" name="email_confirm" value="<?php echo $emailConfirm; ?>" placeholder="Ingrese Confirmación Email">
+                                       </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="form-group col-sm-6">
+                                           <label for="contrasena">Contraseña</label>
+                                           <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Ingrese Contraseña">
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                           <label for="contrasena-confirm">Confirmar Contraseña</label>
+                                           <input type="password" class="form-control" id="contrasena-confirm" name="contrasena_confirm" placeholder="Ingrese Confirmación Contraseña">
+                                       </div>
+                                   </div>
+                                   <div class="form-group">
+                                       <label>Avatar</label>
+                                       <div>
+                                           <input type="file" name="avatar"/>
+                                       </div>
+                                   </div>
+                                   <div class="form-group">
+                                       <label>Sexo</label>
+                                       <div>
+                                           <label class="radio-inline">
+                                               <input type="radio" name="genero" id="genero_masculino" value="0"
+                                                   <?php echo ($genero === "0") ? 'checked="checked"' : ''; ?>> Masculino
+                                           </label>
+                                           <label class="radio-inline">
+                                               <input type="radio" name="genero" id="genero_femenino" value="1"
+                                                   <?php echo ($genero == "1") ? 'checked="checked"' : ''; ?>> Femenino
+                                           </label>
+                                           <label class="radio-inline">
+                                               <input type="radio" name="genero" id="genero_otros" value="2"
+                                                   <?php echo ($genero == "2") ? 'checked="checked"' : ''; ?>> Otro
+                                           </label>
+                                       </div>
+                                   </div>
+                                   <div class="form-group">
+                                       <label> Fecha de Nacimiento</label>
+                                       <div class="row">
+                                           <div class="col-sm-4">
+                                               <select class="form-control" name="fnac_dia">
+                                                   <option value="">Día</option>
+                                                   <?php for ($i = 1; $i <= 31; $i++) { ?>
+                                                       <option
+                                                           value="<?php echo $i; ?>"
+                                                           <?php echo ($i == $dia) ? 'selected="selected"' : ''; ?>
+                                                       ><?php echo $i; ?></option>
+                                                   <?php } ?>
 
-                              <form class="signup-form" action="signup.php" method="post">
+                                                   <?php /* for($i = 1; $i <= 31; $i++) {
+                                                               echo '<option value="' . $i . '">' . $i . '</option>';
+                                                           } */ ?>
+                                               </select>
+                                           </div>
+                                           <div class="col-sm-4">
+                                               <select class="form-control" name="fnac_mes">
+                                                   <option value="">Mes</option>
+                                                   <?php foreach ($meses as $numero => $nombre) { ?>
+                                                       <option
+                                                           value="<?php echo $numero; ?>"
+                                                           <?php echo ($numero == $mes) ? 'selected="selected"' : ''; ?>
+                                                       ><?php echo $nombre; ?></option>
+                                                   <?php } ?>
+                                               </select>
+                                           </div>
+                                           <div class="col-sm-4">
+                                               <select class="form-control" name="fnac_anio">
+                                                   <option value="">Año</option>
+                                                   <?php for ($i = date('Y'); $i >= (date('Y') - 100); $i--) { ?>
+                                                       <option
+                                                           value="<?php echo $i; ?>"
+                                                           <?php echo ($i == $anio) ? 'selected="selected"' : ''; ?>
+                                                       ><?php echo $i; ?></option>
+                                                   <?php } ?>
+                                               </select>
+                                           </div>
+                                       </div>
+                                   </div>
+
+
+                                   <div class="checkbox">
+                                       <label>
+                                           <input type="checkbox" id="chk-terminos" name="terminos"> Acepto los términos y condiciones
+                                       </label>
+                                   </div>
+                                   <input type="submit" name="btn_submit" class="btn btn-info" value="Registrarme"/>
+                               </form>
+                           </div>
+
+                              <?php /* NOTE:  <form class="signup-form" action="signup.php" method="post">
 
                                    <h1 class="form-signin-heading">Registrese</h1>
 
@@ -121,7 +247,7 @@ if($_POST)
                                    <input class="btnbuscar signup-form-boton" type="submit" name="" value="Confirmar">
                                    <input class="btnbuscar signup-form-boton" type="reset" name="" value="Borrar">
 
-                              </form>
+                              </form> */?>
                          </div>
 
                </div>
