@@ -62,16 +62,16 @@ if ($_POST) {
           <h2 class="form-signin-heading">Sign in</h2>
 
           <label for="email" class="sr-only">Email address</label>
-          <input type="email" id="email" name="email" class="form-control" placeholder="Correo Electronico" required autofocus>
+          <input type="email" id="email" id="inputEmail"name="email" class="form-control signup-form-input" placeholder="Correo Electronico" required autofocus>
 
           <label for="contrasena" class="sr-only">Password</label>
-          <input type="password" id="contrasena" name="contrasena" class="form-control" placeholder="Contraseña" required>
+          <input type="password" id="contrasena" id="inputPassword" name="contrasena" class="form-control signup-form-input" placeholder="Contraseña" required>
 
           <div class="checkbox">
           <label class="recordarme">
           <input type="checkbox" name="recordame" value="1">Recordarme</label>
           </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          <button class="btn btn-lg btn-primary btn-block btnbuscar" type="submit">Sign in</button>
 
         </div>
       </form>
