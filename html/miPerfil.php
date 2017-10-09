@@ -28,10 +28,10 @@ $usuario = getUsuarioLogueado();
 
   <body>
 <!-- NOTE: Navbar start -->
-<?php //require_once("navbar.php"); ?>
+<?php require_once("navbar.php"); ?>
 <!-- NOTE: Navbar end -->
 
-    <section class="container">
+    <section class="container slideimages">
         <h2> Bienvenido <?=$usuario["username"]?></h2>
     </section>
     <!-- NOTE: Footer start -->
