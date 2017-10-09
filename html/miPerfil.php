@@ -31,7 +31,7 @@ $usuario = getUsuarioLogueado();
 <?php require_once("navbar.php"); ?>
 <!-- NOTE: Navbar end -->
 
-    <section class="container slideimages">
+    <section class="container slideimages altominimo">
         <h2> Bienvenido <?=$usuario["username"]?></h2>
     </section>
     <!-- NOTE: Footer start -->
