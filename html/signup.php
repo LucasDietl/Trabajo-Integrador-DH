@@ -99,47 +99,51 @@ if($_POST)
                                      <?php endforeach; ?>
                                  </ul>
                                <?php endif;?>
-                               <form role="form" action="signup.php" method="post" enctype="multipart/form-data">
+                               <form  class="signup-form"role="form" action="signup.php" method="post" enctype="multipart/form-data">
+                                 <h1 class="form-signin-heading">Registrese</h1>
+
+                                 <p>Completá el formulario de abajo para recibir información sobre productos y nuevos lanzamientos.</br>
+                                 También podremos enviarte ofertas personalizadas.</p>
                                    <div class="row">
                                        <div class="form-group col-sm-6">
                                            <label for="nombre">Nombre</label>
-                                           <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $nombre; ?>" placeholder="Ingrese Nombre">
+                                           <input type="text" class="form-control signup-form-input" id="nombre" name="nombre" value="<?php echo $nombre; ?>" placeholder="Ingrese Nombre">
                                        </div>
                                        <div class="form-group col-sm-6">
                                            <label for="apellido">Apellido</label>
-                                           <input type="text" class="form-control" id="apellido" name="apellido" value="<?php echo $apellido; ?>" placeholder="Ingrese Apellido">
+                                           <input type="text" class="form-control signup-form-input" id="apellido" name="apellido" value="<?php echo $apellido; ?>" placeholder="Ingrese Apellido">
                                        </div>
                                    </div>
                                    <div class="row">
                                        <div class="form-group col-sm-6">
                                            <label for="username">Nombre de Usuario</label>
-                                           <input type="text" class="form-control" id="username" name="username" value="<?php echo $username; ?>" placeholder="Ingrese Nombre de Usuario">
+                                           <input type="text" class="form-control signup-form-input" id="username" name="username" value="<?php echo $username; ?>" placeholder="Ingrese Nombre de Usuario">
                                        </div>
                                    </div>
                                    <div class="row">
                                        <div class="form-group col-sm-6">
                                            <label for="email">Email</label>
-                                           <input type="text" class="form-control" id="email" name="email" value="<?php echo $email; ?>" placeholder="Ingrese Email">
+                                           <input type="text" class="form-control signup-form-input" id="email" name="email" value="<?php echo $email; ?>" placeholder="Ingrese Email">
                                        </div>
                                        <div class="form-group col-sm-6">
                                            <label for="email-confirm">Confirmar Email</label>
-                                           <input type="text" class="form-control" id="email-confirm" name="email_confirm" value="<?php echo $emailConfirm; ?>" placeholder="Ingrese Confirmación Email">
+                                           <input type="text" class="form-control signup-form-input" id="email-confirm" name="email_confirm" value="<?php echo $emailConfirm; ?>" placeholder="Ingrese Confirmación Email">
                                        </div>
                                    </div>
                                    <div class="row">
                                        <div class="form-group col-sm-6">
                                            <label for="contrasena">Contraseña</label>
-                                           <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Ingrese Contraseña">
+                                           <input type="password" class="form-control signup-form-input" id="contrasena" name="contrasena" placeholder="Ingrese Contraseña">
                                        </div>
                                        <div class="form-group col-sm-6">
                                            <label for="contrasena-confirm">Confirmar Contraseña</label>
-                                           <input type="password" class="form-control" id="contrasena-confirm" name="contrasena_confirm" placeholder="Ingrese Confirmación Contraseña">
+                                           <input type="password" class="form-control signup-form-input" id="contrasena-confirm" name="contrasena_confirm" placeholder="Ingrese Confirmación Contraseña">
                                        </div>
                                    </div>
                                    <div class="form-group">
-                                       <label>Avatar</label>
+                                       <label>Imagen de Perfil</label>
                                        <div>
-                                           <input type="file" name="avatar"/>
+                                           <input class="" value=" " type="file" name="avatar"/>
                                        </div>
                                    </div>
                                    <div class="form-group">
@@ -163,10 +167,10 @@ if($_POST)
                                        <label> Fecha de Nacimiento</label>
                                        <div class="row">
                                            <div class="col-sm-4">
-                                               <select class="form-control" name="fnac_dia">
-                                                   <option value="">Día</option>
+                                               <select class="form-control signup-form-input" name="fnac_dia">
+                                                   <option class="bgcoloroption" value="">Día</option>
                                                    <?php for ($i = 1; $i <= 31; $i++) { ?>
-                                                       <option
+                                                       <option class="bgcoloroption"
                                                            value="<?php echo $i; ?>"
                                                            <?php echo ($i == $dia) ? 'selected="selected"' : ''; ?>
                                                        ><?php echo $i; ?></option>
@@ -178,10 +182,10 @@ if($_POST)
                                                </select>
                                            </div>
                                            <div class="col-sm-4">
-                                               <select class="form-control" name="fnac_mes">
-                                                   <option value="">Mes</option>
+                                               <select class="form-control signup-form-input" name="fnac_mes">
+                                                   <option class="bgcoloroption" value="">Mes</option>
                                                    <?php foreach ($meses as $numero => $nombre) { ?>
-                                                       <option
+                                                       <option class="bgcoloroption"
                                                            value="<?php echo $numero; ?>"
                                                            <?php echo ($numero == $mes) ? 'selected="selected"' : ''; ?>
                                                        ><?php echo $nombre; ?></option>
@@ -189,10 +193,10 @@ if($_POST)
                                                </select>
                                            </div>
                                            <div class="col-sm-4">
-                                               <select class="form-control" name="fnac_anio">
-                                                   <option value="">Año</option>
+                                               <select class="form-control signup-form-input" name="fnac_anio">
+                                                   <option class="bgcoloroption" value="">Año</option>
                                                    <?php for ($i = date('Y'); $i >= (date('Y') - 100); $i--) { ?>
-                                                       <option
+                                                       <option class="bgcoloroption"
                                                            value="<?php echo $i; ?>"
                                                            <?php echo ($i == $anio) ? 'selected="selected"' : ''; ?>
                                                        ><?php echo $i; ?></option>
@@ -208,11 +212,12 @@ if($_POST)
                                            <input type="checkbox" id="chk-terminos" name="terminos"> Acepto los términos y condiciones
                                        </label>
                                    </div>
-                                   <input type="submit" name="btn_submit" class="btn btn-info" value="Registrarme"/>
+                                   <input class="btnbuscar signup-form-boton" type="submit" name="" value="Confirmar"> <?php // NOTE: Registrarme ?>
+                                   <input class="btnbuscar signup-form-boton" type="reset" name="" value="Borrar">
                                </form>
                            </div>
-
-                              <?php /* NOTE:  <form class="signup-form" action="signup.php" method="post">
+<?php   /*
+                                 <form class="signup-form" action="signup.php" method="post">
 
                                    <h1 class="form-signin-heading">Registrese</h1>
 

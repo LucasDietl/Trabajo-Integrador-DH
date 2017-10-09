@@ -126,7 +126,7 @@ text-align: center;
   width: 100%!important;
 }
 
-/* NOTE: sign in start */
+/* NOTE: sign in start ------------------------------------------------------------------ */
 .altominimo{
   min-height: 800px;
 }
@@ -295,7 +295,7 @@ footer h3{
 }
 /* NOTE: FAQS ends */
 
-/* NOTE: signUp Starts*/
+/* NOTE: signUp Starts ---------------------------------------------------------------------*/
 
 .container-signupform {
   background-image: url("../images/base_2.jpg");
@@ -344,7 +344,7 @@ footer h3{
      border-radius: 0.5em;
 }
 
-.signup-form input{
+.signup-form-input{
      background-color: rgba(255, 0, 0, 0.1);
      width: 90%;
      margin: -3px 0px 15px 10px;
@@ -361,7 +361,7 @@ footer h3{
      color: rgba(255, 255, 255, 0.5);
 }
 
-.signup-form input:hover {
+.signup-form-input:hover {
      background-color: rgba(255, 255, 255, 0.4);
      width: 90%;
      margin: -1px -4px 8px 6px;
@@ -376,7 +376,7 @@ footer h3{
 
 }
 
-.signup-form input:focus {
+.signup-form-input:focus {
      background-color: rgba(255, 255, 255, 0.4);
      width: 90%;
      margin: -1px -4px 8px 6px;
@@ -395,6 +395,9 @@ footer h3{
      margin: 25px 3px 10px 10px !important;
      width: 42% !important;
      font-size: 1.5em !important;
+}
+.bgcoloroption{
+  background-color: #75003d!important;
 }
 
 /* NOTE: signUp Ends*/
