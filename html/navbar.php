@@ -20,13 +20,14 @@
         <li><a href="signin.php">Sign In</a></li>
         <li><a href="faq.php">FAQ</a></li>
       </ul>
-
+      <?php if(estaLogueado()){
+        echo '
       <form class="navbar-form navbar-right" method="get" action="home.php">
            <div class="form-group">
-           <?php // NOTE:  <input type="text" class="form-control borderedondo" placeholder="Ingrese aqui su busqueda">?>
         </div>
         <button type="submit" class="btn btnbuscar" name="button" value="out">Cerrar Sesión</button>
-      </form>
+      </form>';
+      } ?>
         </li>
       </ul>
     </div>
