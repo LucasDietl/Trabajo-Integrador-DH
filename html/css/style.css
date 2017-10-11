@@ -1,18 +1,20 @@
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-/* NOTE: navbar sart */
+/* NOTE: navbar sart  #000000 #606060 #e6b1a9 #fae5e2 rgb(190, 143, 108) */
 .navbarcolor{
-  background: linear-gradient(to right,#ef32d9,#89fffd)!important;
+  background: #000000!important;
+  min-height: 100px;
 }
 
 nav div ul li a{
   color: white!important;
-  font-family: 'Sunshiney', cursive;
+  font-family: 'Yesteryear', cursive;
   font-size: 22px;
+  padding: 40px 25px!important;
 }
 .navbar-toggle{
   background-color: transparent!important;
@@ -73,10 +75,10 @@ nav div ul li a{
 
 /* NOTE: Contenido home Start */
 .bgcolorhome{
-  background-color: rgba(230, 214, 144,0.2);
+  background-color: white;
 }
 .slideimages{
-  margin-top: 50px; /* NOTE: este margen es para que todo lo que pongas debajo del navbar no sea tapado por el mismo */
+  margin-top: 100px; /* NOTE: este margen es para que todo lo que pongas debajo del navbar no sea tapado por el mismo */
 }
 .slideshow{
 padding: 0px!important;
@@ -97,8 +99,9 @@ background-size: cover;
 /* NOTE: Contenido home End */
 
 .logoname{
-  padding-top: 7px!important;
-  color: black!important;
+  color: white!important;
+  padding: 25px 25px!important;
+  font-size: 22px;
   }
 
 

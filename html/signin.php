@@ -33,7 +33,7 @@ if ($_POST) {
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <meta name="viewport"content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney|Yesteryear" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Sign In</title>
   </head>

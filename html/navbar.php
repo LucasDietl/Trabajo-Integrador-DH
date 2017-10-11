@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default navbar-fixed-top navbarcolor">
-  <div class="container">
+  <div class="">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
@@ -22,7 +22,7 @@
       </ul>
       <?php if(estaLogueado()){
         echo '
-      <form class="navbar-form navbar-right" method="get" action="home.php">
+      <form class="navbar-form navbar-right" method="post" action="home.php">
            <div class="form-group">
         </div>
         <button type="submit" class="btn btnbuscar" name="button" value="out">Cerrar Sesión</button>
