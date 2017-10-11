@@ -12,14 +12,20 @@
     </div>
 
 
-    <div class="collapse navbar-collapse" id="navbar1">
+    <div class="collapse navbar-collapse border" id="navbar1">
       <ul class="nav navbar-nav">
         <li class="active"> <span class="sr-only">(current)</span></li>
         <li><a href="home.php">Home</a></li>
-        <li><a href="signup.php">Sign Up</a></li>
-        <li><a href="signin.php">Sign In</a></li>
-        <li><a href="faq.php">FAQ</a></li>
+        <li><a href="zapatos.php">Zapatos</a></li>
+        <li><a href="faq.php">Preguntas Frecuentes</a></li>
       </ul>
+      <?php if(!estaLogueado()){
+        echo '
+      <div class="nav navbar-nav pull-right white">
+        <li><a class="white" href="signup.php">Sign Up</a></li>
+        <li><a class="white" href="signin.php">Sign In</a></li>
+      </div>';
+    } ?>
       <?php if(estaLogueado()){
         echo '
       <form class="navbar-form navbar-right" method="post" action="home.php">

@@ -8,6 +8,7 @@
 .navbarcolor{
   background: #000000!important;
   min-height: 100px;
+  border-color: transparent!important;
 }
 
 nav div ul li a{
@@ -103,6 +104,9 @@ background-size: cover;
   padding: 25px 25px!important;
   font-size: 22px;
   }
+.white{
+  color: white!important;
+}
 
 
 .bordecopado{
