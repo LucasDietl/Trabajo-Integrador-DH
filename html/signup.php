@@ -80,7 +80,7 @@ if($_POST)
 
 
 
-     <div class="">
+     <div class="slideimages">
                <div class="container container-signupform">
 
                          <!-- separador-->

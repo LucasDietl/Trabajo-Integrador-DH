@@ -2,7 +2,7 @@
   <div class="">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed hamburgesa" data-toggle="collapse" data-target="#navbar1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -13,6 +13,9 @@
 
 
     <div class="collapse navbar-collapse border" id="navbar1">
+      <div class="text-center">
+        <a class="" style=" color:grey;" href="home.php">#Neverpony</a>
+      </div>
       <ul class="nav navbar-nav">
         <li class="active"> <span class="sr-only">(current)</span></li>
         <li><a href="home.php">Home</a></li>
@@ -22,8 +25,8 @@
       <?php if(!estaLogueado()){
         echo '
       <div class="nav navbar-nav pull-right white">
-        <li><a class="white" href="signup.php">Sign Up</a></li>
-        <li><a class="white" href="signin.php">Sign In</a></li>
+        <li><a class="white sesion" href="signup.php">Sign Up</a></li>
+        <li><a class="white sesion" href="signin.php">Sign In</a></li>
       </div>';
     } ?>
       <?php if(estaLogueado()){

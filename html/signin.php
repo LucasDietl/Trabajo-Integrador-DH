@@ -43,7 +43,7 @@ if ($_POST) {
     <!-- NOTE: Navbar end -->
 
     <?php if (count($arrayDeErrores) > 0) : ?>
-      <ul style="color:red;">
+      <ul class="slideimages"style="color:red;">
           <?php foreach($arrayDeErrores as $error) : ?>
             <li>
               <?=$error?>
@@ -52,7 +52,7 @@ if ($_POST) {
       </ul>
     <?php endif;?>
 
-<div class="container altominimo" >
+<div class="container altominimo slideimages" >
   <div class="row margen">
     <div class="col-xs-12 col-sm-4 col-md-4">
 
