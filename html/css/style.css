@@ -13,11 +13,18 @@
   padding-left: 60px; padding-right: 60px;
 }
 
-nav div ul li a, .sesion{
+nav div ul li a{
   color: white!important;
   font-family: 'Yesteryear', cursive;
   font-size: 22px;
   padding: 40px 25px!important;
+}
+.sesion{
+  color: white;
+  font-family: sans-serif;
+}
+.sesion:hover{
+text-decoration: underline!important;
 }
 .navbar-toggle{
   background-color: transparent!important;
@@ -52,14 +59,18 @@ nav div ul li a, .sesion{
   margin-top: 40px;
 }
 .barra_busqueda{
-  border: 0px;
+  border: 0px transparent!important;
   color: white;
   box-shadow: none;
-  margin-left: 25px;
+  margin-left: 0px;
   width: 100px;
   background-color: black;
-  border-radius: 0;
+  border-radius: 0px;
 
+}
+.barra_busqueda:focus{
+  width: 200px;
+  transition: 1s;
 }
 .fa::before{
   content: "";

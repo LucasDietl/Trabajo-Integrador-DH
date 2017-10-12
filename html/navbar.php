@@ -22,14 +22,14 @@
             <div class="">
               <?php if(!estaLogueado()){
                 echo '
-              <div class="nav navbar-nav pull-right white">
+              <div class="nav navbar-nav pull-left white">
                 <li><a class="white sesion" href="signup.php">Sign Up</a></li>
                 <li><a class="white sesion" href="signin.php">Sign In</a></li>
               </div>';
             } ?>
               <?php if(estaLogueado()){
                 echo '
-              <form class="navbar-form navbar-right" method="post" action="home.php">
+              <form class="navbar-form navbar-left" method="post" action="home.php">
                    <div class="form-group">
                 </div>
                 <button type="submit" class="btn btnbuscar" name="button" value="out">Cerrar Sesión</button>
