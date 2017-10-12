@@ -51,7 +51,24 @@ nav div ul li a, .sesion{
 .hamburgesa{
   margin-top: 40px;
 }
+.barra_busqueda{
+  border: 0px;
+  color: white;
+  box-shadow: none;
+  margin-left: 25px;
+  width: 100px;
+  background-color: black;
+  border-radius: 0;
 
+}
+.fa::before{
+  content: "";
+  color: white;
+}
+.search{
+  background-color: transparent;
+  color: white;
+}
 .btnbuscar:hover {
   /*background: #2c0fd1;*/
   background-image: -webkit-linear-gradient(top, #2980b9, #eb28e4);
