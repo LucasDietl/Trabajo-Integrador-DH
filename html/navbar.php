@@ -22,9 +22,9 @@
             <div class="text-center">
               <?php if(!estaLogueado()){
                 echo '
-              <div class="nav navbar-nav pull-left">
-                <li><a class="white sesion barra padding_SignInAndUp" href="signup.php">Registrarse</a></li>
-                <li><a class="white sesion espacio padding_SignInAndUp" href="signin.php">Iniciar Sesión</a></li>
+              <div class="nav navbar-nav pull-left iconos">
+                <a class="white sesion  padding_SignInAndUp" href="signup.php">CREAR CUENTA</a>'.' / '.'
+                <a class="white sesion  padding_SignInAndUp" href="signin.php">INICIAR SESIÓN</a>
               </div>';
             } ?>
               <?php if(estaLogueado()){

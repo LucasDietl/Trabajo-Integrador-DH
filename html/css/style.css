@@ -87,12 +87,7 @@ width: 30px;
   width: 200px;
   transition: 1s;
 }
-.barra::after{
-  content: "     /";
-}
-.espacio::before{
-  content:"/";
-}
+
 .fa::before{
   content: "";
   color: white;
