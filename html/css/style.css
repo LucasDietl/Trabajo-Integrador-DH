@@ -32,6 +32,12 @@ text-decoration: underline!important;
 .borderedondo{
   border-radius: 5px;
 }
+.carrrito_padding{
+  padding: 15px 0px;
+}
+.padding_SignInAndUp{
+  padding: 15px 0px!important;
+}
 .btnbuscar {
   background: #eb28e4;
   background-image: -webkit-linear-gradient(top, #eb28e4, #2980b9);
@@ -68,9 +74,24 @@ text-decoration: underline!important;
   border-radius: 0px;
 
 }
+.fa-facebook-square:before, .fa-instagram::before{
+font-size: 30px;
+height: 30px;
+width: 30px;
+
+}
+.iconos{
+  padding-top: 25px;
+}
 .barra_busqueda:focus{
   width: 200px;
   transition: 1s;
+}
+.barra::after{
+  content: "     /";
+}
+.espacio::before{
+  content:"/";
 }
 .fa::before{
   content: "";
@@ -113,7 +134,7 @@ text-decoration: underline!important;
   background-color: white;
 }
 .slideimages{
-  margin-top: 100px; /* NOTE: este margen es para que todo lo que pongas debajo del navbar no sea tapado por el mismo */
+  margin-top: 170px; /* NOTE: este margen es para que todo lo que pongas debajo del navbar no sea tapado por el mismo */
 }
 .slideshow{
 padding: 0px!important;

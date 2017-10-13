@@ -19,12 +19,12 @@
     <div class="container-fluid">
       <div class="row vertical-align">
           <div class="col-sm-4">
-            <div class="">
+            <div class="text-center">
               <?php if(!estaLogueado()){
                 echo '
-              <div class="nav navbar-nav pull-left white">
-                <li><a class="white sesion" href="signup.php">Sign Up</a></li>
-                <li><a class="white sesion" href="signin.php">Sign In</a></li>
+              <div class="nav navbar-nav pull-left">
+                <li><a class="white sesion barra padding_SignInAndUp" href="signup.php">Registrarse</a></li>
+                <li><a class="white sesion espacio padding_SignInAndUp" href="signin.php">Iniciar Sesión</a></li>
               </div>';
             } ?>
               <?php if(estaLogueado()){
@@ -43,33 +43,45 @@
                 <div class="inner-addon left-addon">
                     <button type="submit"class="btn search">
                     <span class="glyphicon glyphicon-search"></span></button>
-                    <input class="barra_busqueda" type="text" placeholder="Search" class="form-control" />
+                    <input class="barra_busqueda" type="text" placeholder="Buscar" class="form-control" />
                 </div>
               </form>
 
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="carrito">
-              <span>Carrito</span>
-              <span>Items</span>
-              <span>Precio</span>
+            <div class="carrito text-center">
+              <span class="glyphicon glyphicon-shopping-cart white carrrito_padding"></span>
+              <span class="white sesion ">Carrito</span>
+              <span class="white ">Items(0)</span>
+              <span class="white ">0$</span>
 
             </div>
           </div>
       </div>
     </div>
-    <a class="navbar-brand logoname" href="home.php">THE<br>BLONDIE</a>
-      <ul class="nav navbar-nav">
+    <div class="row vertical align">
+
+    <div class="col-md-2 col-sm-3">
+      <a class="navbar-brand logoname" href="home.php">THE<br>BLONDIE</a>
+    </div>
+    <div class="col-md-8 col-sm-9">
+
+
+      <ul class="nav navbar-nav text-center">
         <li class="active"> <span class="sr-only">(current)</span></li>
         <li><a href="home.php">Home</a></li>
         <li><a href="zapatos.php">Zapatos</a></li>
         <li><a href="faq.php">Preguntas Frecuentes</a></li>
       </ul>
-
-
+    </div>
+    <div class="col-md-2 hidden-xs hidden-sm text-center iconos">
+      <i class="fa fa-facebook-square"></i>
+      <i class="fa fa-instagram"></i>
+    </div>
     </div>
   </div>
+</div>
 </nav>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
