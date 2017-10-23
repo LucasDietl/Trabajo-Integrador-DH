@@ -17,7 +17,7 @@
         <a class="" style=" color:grey;" href="home.php">#Neverpony</a>
     </div>
     <div class="container-fluid">
-      <div class="row vertical-align">
+      <div class="row ">
           <div class="col-sm-4">
             <div class="text-center">
               <?php if(!estaLogueado()){

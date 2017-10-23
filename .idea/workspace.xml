@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c72aa0-43c8-43e4-8a55-9937def639f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/navbar.php" afterPath="$PROJECT_DIR$/html/navbar.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,25 +13,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="1360">
               <caret line="80" column="62" lean-forward="false" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+            <state relative-caret-position="235">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding>
-                <marker date="1508774051135" expanded="true" signature="1049:1273" ph="..." />
-                <marker date="1508774051135" expanded="true" signature="1440:1638" ph="..." />
-                <marker date="1508774051135" expanded="true" signature="1484:1507" ph="..." />
+                <marker date="1508774871929" expanded="true" signature="1035:1259" ph="..." />
+                <marker date="1508774871929" expanded="true" signature="1426:1624" ph="..." />
+                <marker date="1508774871929" expanded="true" signature="1470:1493" ph="..." />
               </folding>
             </state>
           </provider>
@@ -205,12 +204,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508763222312</updated>
-      <workItem from="1508763223749" duration="5290000" />
+      <workItem from="1508763223749" duration="6181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5290000" />
+    <option name="totallyTimeSpent" value="6181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -294,18 +293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
-          <folding>
-            <marker date="1508774051135" expanded="true" signature="1049:1273" ph="..." />
-            <marker date="1508774051135" expanded="true" signature="1440:1638" ph="..." />
-            <marker date="1508774051135" expanded="true" signature="1484:1507" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -316,9 +303,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="1360">
           <caret line="80" column="62" lean-forward="false" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <marker date="1508774871929" expanded="true" signature="1035:1259" ph="..." />
+            <marker date="1508774871929" expanded="true" signature="1426:1624" ph="..." />
+            <marker date="1508774871929" expanded="true" signature="1470:1493" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
