@@ -76,8 +76,8 @@
       </ul>
     </div>
     <div class="col-md-2 hidden-xs hidden-sm text-center iconos">
-      <i class="fa fa-facebook-square"></i>
-      <i class="fa fa-instagram"></i>
+       <a href="https://www.facebook.com/theblondieok/"><i class="fa fa-facebook-square"></i></a>
+       <a href="https://www.facebook.com/theblondieok/"><i class="fa fa-instagram"></i></a>
     </div>
     </div>
   </div>

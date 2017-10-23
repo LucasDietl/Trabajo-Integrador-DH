@@ -15,13 +15,13 @@
 
 nav div ul li a{
   color: white!important;
-  font-family: 'Yesteryear', cursive;
+  font-family: 'Raleway', cursive;
   font-size: 22px;
   padding: 40px 25px!important;
 }
 .sesion{
   color: white;
-  font-family: sans-serif;
+  font-family: 'Raleway', cursive;
 }
 .sesion:hover{
 text-decoration: underline!important;
@@ -45,8 +45,8 @@ text-decoration: underline!important;
   background-image: -ms-linear-gradient(top, #eb28e4, #2980b9);
   background-image: -o-linear-gradient(top, #eb28e4, #2980b9);
   background-image: linear-gradient(to bottom, #eb28e4, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
   border-radius: 28px;
   text-shadow: 1px 1px 3px #666666;
   -webkit-box-shadow: 0px 1px 3px #666666;
@@ -70,8 +70,12 @@ text-decoration: underline!important;
   box-shadow: none;
   margin-left: 0px;
   width: 100px;
-  background-color: black;
+  background-color: #000000;
   border-radius: 0px;
+}
+.barra_busqueda::-webkit-input-placeholder{
+    color: white;
+    font-family: 'Raleway', cursive;
 
 }
 .fa-facebook-square:before, .fa-instagram::before{
@@ -103,7 +107,7 @@ width: 30px;
   background-image: -ms-linear-gradient(top,#2980b9, #eb28e4);
   background-image: -o-linear-gradient(top,#2980b9, #eb28e4);
   background-image: linear-gradient(to bottom,#2980b9, #eb28e4);
-  font-family: Sunshiney
+  font-family: Sunshiney;
   text-decoration: none;
   color: #ffffff;
 }
@@ -191,7 +195,7 @@ text-align: center;
 
 
 .signin {
-  padding-top: 40px 0px 40px 0px;
+  padding: 40px 0px 40px 0px;
   /*padding-bottom: 40px;*/
   background-color: #eee;
 }
