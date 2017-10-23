@@ -65,10 +65,10 @@
     <div class="col-md-2 col-sm-3">
       <a class="navbar-brand logoname" href="home.php">THE<br>BLONDIE</a>
     </div>
-    <div class="col-md-8 col-sm-9">
+    <div class="col-md-8 col-sm-9 center-block">
 
 
-      <ul class="nav navbar-nav text-center">
+      <ul class="nav navbar-nav">
         <li class="active"> <span class="sr-only">(current)</span></li>
         <li><a href="home.php">Home</a></li>
         <li><a href="zapatos.php">Zapatos</a></li>
@@ -77,7 +77,8 @@
     </div>
     <div class="col-md-2 hidden-xs hidden-sm text-center iconos">
        <a href="https://www.facebook.com/theblondieok/"><i class="fa fa-facebook-square"></i></a>
-       <a href="https://www.facebook.com/theblondieok/"><i class="fa fa-instagram"></i></a>
+       <a href="https://www.instagram.com/theblondieok/?hl=es"><i class="fa fa-instagram"></i></a>
+       <a href="https://twitter.com/theblondieok" class="twitter"><i class="fa fa-twitter"></i></a>
     </div>
     </div>
   </div>

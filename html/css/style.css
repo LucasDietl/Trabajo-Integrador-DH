@@ -78,7 +78,7 @@ text-decoration: underline!important;
     font-family: 'Raleway', cursive;
 
 }
-.fa-facebook-square:before, .fa-instagram::before{
+.fa-facebook-square:before, .fa-instagram::before, .fa-twitter::before{
 font-size: 30px;
 height: 30px;
 width: 30px;
@@ -155,8 +155,8 @@ background-size: cover;
 
 .logoname{
   color: white!important;
-  padding: 40px 25px!important;
-  font-size: 22px;
+  padding: 25px 25px!important;
+  font-size: 27px;
   }
 .white{
   color: white!important;
