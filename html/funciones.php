@@ -1,5 +1,23 @@
 <?php
 session_start();
+// coneccion a la base de datos start ---------------------------------------------------
+ try {
+     $db = new PDO('mysql:host=localhost;charset=utf8mb4',
+         'root',
+         '',[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+ }
+ catch( PDOException $Exception ) {
+     echo $Exception->getMessage();
+ }
+$query = $db->query('CREATE DATABASE IF NOT EXISTS usuarios;');
+//$results =$query->fetchAll(PDO::FETCH_ASSOC);
+
+//if(mysql_query("CREATE DATABASE Usuarios,$db")){
+  // echo "la bas de datos se creo correctamente";
+//}else echo "error al crear la base de datos";
+
+// coneccion a la base de datos end -------------------------------------------------------
+
 
 if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
   loguear($_COOKIE["usuarioLogueado"]);

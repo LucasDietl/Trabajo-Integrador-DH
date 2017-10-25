@@ -68,11 +68,11 @@
     <div class="col-md-8 col-sm-9 center-block">
 
 
-      <ul class="nav navbar-nav">
-        <li class="active"> <span class="sr-only">(current)</span></li>
-        <li><a href="home.php">Home</a></li>
-        <li><a href="zapatos.php">Zapatos</a></li>
-        <li><a href="faq.php">Preguntas Frecuentes</a></li>
+      <ul class="nav navbar-nav inline">
+        <li class="active inlineblock"> <span class="sr-only">(current)</span></li>
+        <li class="inlineblock"><a href="home.php">Home</a></li>
+        <li class="inlineblock"><a href="zapatos.php">Zapatos</a></li>
+        <li class="inlineblock"><a href="faq.php">Preguntas Frecuentes</a></li>
       </ul>
     </div>
     <div class="col-md-2 hidden-xs hidden-sm text-center iconos">

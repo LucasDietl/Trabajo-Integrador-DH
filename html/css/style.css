@@ -87,6 +87,14 @@ width: 30px;
 .iconos{
   padding-top: 35px;
 }
+.inline{
+    text-align: center;
+    width: 100%;
+}
+.inlineblock{
+    display: inline-block!important;
+    float: none!important;
+}
 .barra_busqueda:focus{
   width: 200px;
   transition: 1s;
