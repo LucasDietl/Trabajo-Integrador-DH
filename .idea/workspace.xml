@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c72aa0-43c8-43e4-8a55-9937def639f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/funciones.php" afterPath="$PROJECT_DIR$/html/funciones.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/navbar.php" afterPath="$PROJECT_DIR$/html/navbar.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,13 +13,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="funciones.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="funciones.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/funciones.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+            <state relative-caret-position="561">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
-                <marker date="1508942546741" expanded="true" signature="355:394" ph="SELECT genre... genres" />
+                <marker date="1508954572631" expanded="true" signature="355:397" ph="SELECT genre... genres" />
+                <marker date="1508954572631" expanded="true" signature="656:1053" ph="CREATE TABLE... datos" />
+                <marker date="1508954572631" expanded="true" signature="1228:1246" ph="INSERT INTO TABLE... " />
+                <marker date="1508954572631" expanded="true" signature="1228:1367" ph="INSERT INTO TABLE... " />
+                <marker date="1508954572631" expanded="true" signature="1228:1375" ph="INSERT INTO TABLE... " />
+                <marker date="1508954572631" expanded="true" signature="1228:1447" ph="INSERT INTO TABLE... " />
               </folding>
             </state>
           </provider>
@@ -38,26 +40,6 @@
                 <marker date="1508943403568" expanded="true" signature="1426:1624" ph="..." />
                 <marker date="1508943403568" expanded="true" signature="1470:1493" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -86,9 +68,9 @@
         <option value="$PROJECT_DIR$/html/signup.php" />
         <option value="$PROJECT_DIR$/html/zapatos.php" />
         <option value="$PROJECT_DIR$/html/home.php" />
-        <option value="$PROJECT_DIR$/html/funciones.php" />
         <option value="$PROJECT_DIR$/html/navbar.php" />
         <option value="$PROJECT_DIR$/html/css/style.css" />
+        <option value="$PROJECT_DIR$/html/funciones.php" />
       </list>
     </option>
   </component>
@@ -175,12 +157,12 @@
       <updated>1508763222312</updated>
       <workItem from="1508763223749" duration="8192000" />
       <workItem from="1508797253102" duration="84000" />
-      <workItem from="1508940491014" duration="3124000" />
+      <workItem from="1508940491014" duration="9065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11400000" />
+    <option name="totallyTimeSpent" value="17341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -272,21 +254,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/funciones.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding>
-            <marker date="1508942546741" expanded="true" signature="355:394" ph="SELECT genre... genres" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -302,11 +282,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/style.css">
+    <entry file="file://$PROJECT_DIR$/html/funciones.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="561">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1508954572631" expanded="true" signature="355:397" ph="SELECT genre... genres" />
+            <marker date="1508954572631" expanded="true" signature="656:1053" ph="CREATE TABLE... datos" />
+            <marker date="1508954572631" expanded="true" signature="1228:1246" ph="INSERT INTO TABLE... " />
+            <marker date="1508954572631" expanded="true" signature="1228:1367" ph="INSERT INTO TABLE... " />
+            <marker date="1508954572631" expanded="true" signature="1228:1375" ph="INSERT INTO TABLE... " />
+            <marker date="1508954572631" expanded="true" signature="1228:1447" ph="INSERT INTO TABLE... " />
+          </folding>
         </state>
       </provider>
     </entry>
