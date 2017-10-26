@@ -1,47 +1,7 @@
 <?php
 session_start();
 // coneccion a la base de datos start ---------------------------------------------------
- try {
-     $db = new PDO('mysql:host=localhost;charset=utf8mb4',
-         'root',
-         '',[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
- }
- catch( PDOException $Exception ) {
-     echo $Exception->getMessage();
- }
-$query = $db->query('CREATE DATABASE IF NOT EXISTS usuarios_db;');
-$db = null;
-try {
-    $db = new PDO('mysql:host=localhost;dbname=usuarios_db;charset=utf8mb4',
-        'root',
-        '',[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
-}
-catch( PDOException $Exception ) {
-    echo $Exception->getMessage();
-}
-$crear =  "CREATE TABLE IF NOT EXISTS `datos` (
-nombre MEDIUMTEXT NOT NULL,
-  apellido MEDIUMTEXT NOT NULL,
-  username MEDIUMTEXT NOT NULL,
-  email VARCHAR(45) NOT NULL,
-  contraseña VARCHAR(45) NOT NULL,
-  genero VARCHAR(45) NOT NULL,
-  fecha_nacimiento DATE NOT NULL,
-  categorias VARCHAR(45) NULL DEFAULT 'Sin categorias',
-  descripcion VARCHAR(45) NULL DEFAULT 'Sin comentarios',
-  PRIMARY KEY (`email`))";
-$db->exec($crear);
 
-$import_json = file_get_contents("usuarios.json");
-$data = json_decode($import_json,true);
-
-$subir=implode("','",$data);
-var_dump($subir);
-
-    $sql = "INSERT INTO TABLE usuarios_db . datos ('nombre','apellido','username','contraseña','fecha_nacimiento','categorias','descripcion') VALUES ('$subir');";
-    $db->exec($sql);
-
-//$results =$query->fetchAll(PDO::FETCH_ASSOC);
 
 
 // coneccion a la base de datos end -------------------------------------------------------
