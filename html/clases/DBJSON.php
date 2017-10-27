@@ -20,7 +20,7 @@ class DBJSON extends DB {
 			$array = json_decode($linea, true);
 
 			if ($array["email"] == $email) {
-				return new Usuario($array["nombre"], $array["email"],$array["password"], $array["edad"], $array["pais"], $array["id"]);
+				return new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["enailConfirm"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
 			}
 			$linea = fgets($archivo);
 		}
@@ -38,7 +38,7 @@ class DBJSON extends DB {
 		while($linea != false) {
 
 			$array = json_decode($linea, true);
-			$usuarios[] = new Usuario($array["nombre"], $array["email"],$array["password"], $array["edad"], $array["pais"], $array["id"]);
+			$usuarios[] = new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["enailConfirm"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
 
 			$linea = fgets($archivo);
 		}

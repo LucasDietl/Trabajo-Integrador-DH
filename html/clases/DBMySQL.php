@@ -6,9 +6,9 @@ class DBMySQL extends DB {
   private $conn;
 
   public function __construct() {
-    $dsn = "mysql:host=localhost;port=3306;dbname=reglog";
+    $dsn = "mysql:host=localhost;port=3306;dbname=theblondie_db";
     $user = "root";
-    $pass = "123456";
+    $pass = "";
 
     $this->conn = new PDO($dsn, $user,$pass);
   }
@@ -24,7 +24,7 @@ class DBMySQL extends DB {
     $arrayDeObjs = [];
 
     foreach ($arrayDeArrays as $array) {
-      $arrayDeObjs[] = new Usuario($array["nombre"], $array["email"],$array["password"], $array["edad"], $array["pais"], $array["id"]);
+      $arrayDeObjs[] = new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["enailConfirm"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
     }
 
     return $arrayDeObjs;
@@ -43,20 +43,25 @@ class DBMySQL extends DB {
       return NULL;
     }
     else {
-      return new Usuario($array["nombre"], $array["email"],$array["password"], $array["edad"], $array["pais"], $array["id"]);
+      return new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["enailConfirm"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
     }
 
 
   }
   public function guardarUsuario(Usuario $usuario) {
-    $sql = "INSERT into usuarios values(default, :nombre, :email, :password, :edad, :pais)";
+    $sql = "INSERT into usuarios values(default, :nombre,:apellido,:username,:email,:enamilConfirm,:password,:genero,:dia, :mes, :anio)";
 
     $query = $this->conn->prepare($sql);
     $query->bindValue(":nombre",$usuario->getNombre());
+    $query->bindValue(":apellido",$usuario->getApellido());
+    $query->bindValue(":username",$usuario->getUserName());
     $query->bindValue(":email",$usuario->getEmail());
+    $query->bindValue(":emailConfirm",$usuario->getEmailConfirm());
     $query->bindValue(":password",$usuario->getPassword());
-    $query->bindValue(":edad",$usuario->getEdad());
-    $query->bindValue(":pais",$usuario->getPais());
+    $query->bindValue(":genero",$usuario->getGenero());
+    $query->bindValue(":dia",$usuario->getDia());
+    $query->bindValue(":mes",$usuario->getMes());
+    $query->bindValue(":anio",$usuario->getAnio());
 
     $query->execute();
 
@@ -75,7 +80,7 @@ class DBMySQL extends DB {
     $arrayDeObjs = [];
 
     foreach ($arrayDeArrays as $array) {
-      $arrayDeObjs[] = new Usuario($array["nombre"], $array["email"],$array["password"], $array["edad"], $array["pais"], $array["id"]);
+      $arrayDeObjs[] = new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["enailConfirm"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
     }
 
     return $arrayDeObjs;

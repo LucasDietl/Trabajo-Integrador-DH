@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c72aa0-43c8-43e4-8a55-9937def639f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/clases/usuario.php" afterPath="$PROJECT_DIR$/html/clases/usuario.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/clases/DBJSON.php" afterPath="$PROJECT_DIR$/html/clases/DBJSON.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/clases/DBMySQL.php" afterPath="$PROJECT_DIR$/html/clases/DBMySQL.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,47 +44,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/clases/DB.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usuario.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="usuario.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/clases/usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
+            <state relative-caret-position="2618">
               <caret line="154" column="1" lean-forward="true" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBJSON.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/clases/DBJSON.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBMySQL.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/clases/DBMySQL.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validator.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="validator.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/clases/validator.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -121,6 +92,8 @@
         <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/funciones.php" />
         <option value="$PROJECT_DIR$/html/clases/usuario.php" />
+        <option value="$PROJECT_DIR$/html/clases/DBMySQL.php" />
+        <option value="$PROJECT_DIR$/html/clases/DBJSON.php" />
       </list>
     </option>
   </component>
@@ -215,12 +188,12 @@
       <workItem from="1508797253102" duration="84000" />
       <workItem from="1508940491014" duration="9663000" />
       <workItem from="1508973231501" duration="1000000" />
-      <workItem from="1509026833686" duration="3838000" />
+      <workItem from="1509026833686" duration="5391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22777000" />
+    <option name="totallyTimeSpent" value="24330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -339,46 +312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/clases/DBJSON.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/clases/DBMySQL.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/clases/validator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/clases/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/clases/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/funciones.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -395,10 +328,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/clases/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/clases/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/clases/DBJSON.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="229" lean-forward="false" selection-start-line="40" selection-start-column="229" selection-end-line="40" selection-end-column="229" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/clases/DBMySQL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="226" lean-forward="false" selection-start-line="82" selection-start-column="226" selection-end-line="82" selection-end-column="226" />
+          <folding>
+            <marker date="1509117354403" expanded="true" signature="321:343" ph="Select * fro... usuarios" />
+            <marker date="1509117354403" expanded="true" signature="852:895" ph="Select * fro... usuarios" />
+            <marker date="1509117354403" expanded="true" signature="1402:1525" ph="INSERT into usuarios... " />
+            <marker date="1509117354403" expanded="true" signature="2222:2292" ph="Select * fro... usuarios" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/clases/usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
+        <state relative-caret-position="2618">
           <caret line="154" column="1" lean-forward="true" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/clases/validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
