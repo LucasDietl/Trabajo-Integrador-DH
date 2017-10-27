@@ -1,5 +1,5 @@
 <?php
-
+require_once ("soporte.php");
 require_once("funciones.php");
 if (estaLogueado()) {
   header("Location:miPerfil.php");exit;

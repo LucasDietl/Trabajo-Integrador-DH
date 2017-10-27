@@ -1,4 +1,5 @@
 <?php
+require_once ("soporte.php");
 require_once("funciones.php");
 if (estaLogueado()) {
   header("Location:miPerfil.php");exit;
@@ -9,7 +10,7 @@ $title = 'LOGIN';
 $arrayDeErrores = [];
 
 if ($_POST) {
-  $arrayDeErrores = validarLogin();
+  $arrayDeErrores = validarLogin($db);
 
   if (count($arrayDeErrores) == 0) {
     loguear($_POST["email"]);

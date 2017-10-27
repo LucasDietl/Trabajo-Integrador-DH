@@ -1,3 +1,4 @@
+<?php require_once("soporte.php");?>
 <nav class="navbar navbar-default navbar-fixed-top navbarcolor">
   <div class="">
     <!-- Brand and toggle get grouped for better mobile display -->

@@ -23,7 +23,7 @@ class Usuario {
     }
 
     $this->nombre = $nombre;
-    $this->aplellido = $apellido;
+    $this->apellido = $apellido;
     $this->username = $username;
     $this->emailConfirm = $emailConfirm;
     $this->genero = $genero;
