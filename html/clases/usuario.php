@@ -2,13 +2,18 @@
 
 class Usuario {
   private $nombre;
+  private $apellido;
+  private $username;
   private $email;
+  private $emailConfirm;
   private $password;
-  private $edad;
-  private $pais;
+  private $genero;
+  private $dia;
+  private $mes;
+  private $anio;
   private $id;
 
-  public function __construct($nombre, $email, $password, $edad, $pais, $id = null) {
+  public function __construct($nombre,$apellido,$username, $email,$emailConfirm, $password,$genero, $dia, $mes,$anio, $id = null) {
     if ($id == null) {
       // Viene por POST
       $this->password = password_hash($password, PASSWORD_DEFAULT);
@@ -18,9 +23,14 @@ class Usuario {
     }
 
     $this->nombre = $nombre;
+    $this->aplellido = $apellido;
+    $this->username = $username;
+    $this->emailConfirm = $emailConfirm;
+    $this->genero = $genero;
+    $this->dia = $dia;
     $this->email = $email;
-    $this->edad = $edad;
-    $this->pais = $pais;
+    $this->mes = $mes;
+    $this->anio = $anio;
     $this->id = $id;
   }
 
@@ -31,6 +41,34 @@ class Usuario {
   public function setNombre($nombre) {
     $this->nombre = $nombre;
   }
+
+  public function getApellido() {
+      return $this->apellido;
+  }
+
+  public function setApellido($apellido) {
+      $this->apellido = $apellido;
+  }
+
+  public function getUserName() {
+      return $this->username;
+  }
+
+  public function setUserName($username) {
+      $this->username = $username;
+  }
+
+
+
+  public function getEmailConfirm() {
+      return $this->emailConfirm;
+  }
+
+  public function setEmailConfirm($emailConfirm) {
+      $this->emailConfirm = $emailConfirm;
+  }
+
+
 
   public function getEmail() {
     return $this->email;
@@ -48,20 +86,34 @@ class Usuario {
     $this->password = $password;
   }
 
-  public function getPais() {
-    return $this->pais;
+  public function getGenero() {
+    return $this->genero;
   }
 
-  public function setPais($pais) {
-    $this->pais = $pais;
+  public function setGenero($genero) {
+    $this->genero = $genero;
   }
 
-  public function getEdad() {
-    return $this->edad;
+  public function getDia() {
+    return $this->dia;
   }
 
-  public function setEdad($edad) {
-    $this->edad = $edad;
+  public function setDia($dia) {
+    $this->dia = $dia;
+  }
+  public function getMes() {
+      return $this->mes;
+  }
+
+  public function setMes($mes) {
+      $this->mes = $mes;
+  }
+  public function getAnio() {
+      return $this->anio;
+  }
+
+  public function setAnio($anio) {
+      $this->anio = $anio;
   }
 
   public function getId() {
@@ -75,11 +127,16 @@ class Usuario {
   public function toArray() {
     return [
       "id" => $this->id,
+      "nombre" => $this->nombre,
+      "apellido" => $this->apellido,
+      "username" => $this->username,
       "email" => $this->email,
+      "emailConfirm" => $this->emailConfirm,
       "password" => $this->password,
-      "pais" => $this->pais,
-      "edad" => $this->edad,
-      "nombre" => $this->nombre
+      "genero" => $this->genero,
+      "dia" => $this->dia,
+      "mes" => $this->mes,
+      "anio" => $this->anio
     ];
   }
 
