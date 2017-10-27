@@ -21,14 +21,14 @@
       <div class="row ">
           <div class="col-sm-4">
             <div class="text-center">
-              <?php if(!estaLogueado()){
+              <?php if(!$auth->estaLogueado()){
                 echo '
               <div class="nav navbar-nav pull-left iconos">
                 <a class="white sesion  padding_SignInAndUp" href="signup.php">CREAR CUENTA</a>'.' / '.'
                 <a class="white sesion  padding_SignInAndUp" href="signin.php">INICIAR SESIÓN</a>
               </div>';
             } ?>
-              <?php if(estaLogueado()){
+              <?php if($auth->estaLogueado()){
                 echo '
               <form class="navbar-form navbar-left" method="post" action="home.php">
                    <div class="form-group">

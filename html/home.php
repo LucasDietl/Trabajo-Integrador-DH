@@ -18,7 +18,7 @@
   <?php
   if($_POST){
   if($_POST["button"]){
-    $db->logout();
+    $auth->logout();
   }};
    ?>
 <body class="bgcolorhome">
