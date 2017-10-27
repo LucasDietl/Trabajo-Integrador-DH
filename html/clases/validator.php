@@ -12,7 +12,7 @@ class Validator {
       else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
           $arrayDeErrores["email"] = "El formato del email no es valido";
       }
-      else if $db->traerPorEmail($_POST["email"]) {
+      else if ($db->traerPorEmail($_POST["email"]) {
           $arrayDeErrores["email"] = "El usuario no ha sido encontrado";
       }
       else {
