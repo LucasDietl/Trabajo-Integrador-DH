@@ -4,7 +4,32 @@ require_once("DB.php");
 
 class Validator {
   public function validarLogin(DB $db) {
-		$arrayDeErrores = [];
+      $arrayDeErrores= [];
+
+      if($_POST["email"] == "") {
+          $arrayDeErrores["email"] = "Por favor ingrese su email";
+      }
+      else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
+          $arrayDeErrores["email"] = "El formato del email no es valido";
+      }
+      else if $db->traerPorEmail($_POST["email"]) {
+          $arrayDeErrores["email"] = "El usuario no ha sido encontrado";
+      }
+      else {
+          if (strlen($_POST["contrasena"]) < 8) {
+              $arrayDeErrores["contrasena"] = "Su contraseña debe ser de por lo menos 8 caracteres";
+          }
+          else {
+              $usuario = $db->traerPorEmail($_POST["email"]);
+
+              if (password_verify($_POST["contrasena"],$usuario->getPassword()) == false) {
+                  $arrayDeErrores["password"] = "La contraseña no coincide"; // PUEDE SER QUE TENGAMOS MESCLA DE INGLES Y CASTELLANO
+              }
+          }
+      }
+      return $arrayDeErrores;
+  }
+		/*$arrayDeErrores = [];
 
 
 		if ($_POST["email"] == "") {
@@ -26,10 +51,57 @@ class Validator {
 		}
 
 		return $arrayDeErrores;
-	}
+	}*/
 
   public function validarInformacion(DB $db) {
-		$arrayDeErrores = [];
+
+      $arrayDeErrores = [];
+
+      $nombreDelArchivo = $_FILES["avatar"]["name"];
+      $extension = pathinfo($nombreDelArchivo,PATHINFO_EXTENSION);
+
+      if($_FILES["avatar"]["error"] != UPLOAD_ERR_OK) {
+          $arrayDeErrores["avatar"] = "Hubo un error al subir el archivo";
+      }
+      else if ($extension != "jpg" && $extension != "jpeg" && $extension != "gif" && $extension !=  "png") {
+          $arrayDeErrores["avatar"] = "Los formato de foto aceptados son (.jpg/.jpeg, .gif y .png)";
+      }
+
+
+      if($_POST["nombre"] == "") {
+          $arrayDeErrores["nombre"] = "Por favor inrese su nombre";
+      }
+
+      if($_POST["email"] == "") {
+          $arrayDeErrores["email"] = "Por favor inrese su email";
+      }
+      else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
+          $arrayDeErrores["email"] = "El formato del email no es valido";
+      }
+      else if (traerPorEmail($_POST["email"]) != NULL) {
+          $arrayDeErrores["email"] = "Ya existe un usuario registrado con el email ingresado";
+      }
+      if($_POST["username"] == "") {
+          $arrayDeErrores["username"] = "Por favor inrese su nombre de usuario";
+      }
+      if (strlen($_POST["contrasena"]) < 8) {
+          $arrayDeErrores["contrasena"] = "Necesito que tu contraseña tenga al menos 8 caracteres";
+      }
+      else if (preg_match('/[A-Z]/', $_POST["contrasena"]) == false) {
+          $arrayDeErrores["contrasena"] = "Necesito que tu contraseña tenga al menos 1 mayuscula";
+      }
+      else if ($_POST["contrasena"] != $_POST["contrasena_confirm"])
+      {
+          $arrayDeErrores["contrasena"] = "Las dos contraseñas no coinciden";
+      }
+
+
+      return $arrayDeErrores;
+  }
+
+
+
+  	/*$arrayDeErrores = [];   ESTO ES LO QUE CREO DARIO
 
 		$nombreArchivo = $_FILES["avatar"]["name"];
 
@@ -72,7 +144,7 @@ class Validator {
 		}
 
 		return $arrayDeErrores;
-	}
+	}*/
 }
 
 ?>

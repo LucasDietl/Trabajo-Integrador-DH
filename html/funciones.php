@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 // coneccion a la base de datos start ---------------------------------------------------
 
 
@@ -7,9 +7,9 @@ session_start();
 // coneccion a la base de datos end -------------------------------------------------------
 
 
-if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
-  loguear($_COOKIE["usuarioLogueado"]);
-}
+//if (!estaLogueado() && isset($_COOKIE["usuarioLogueado"])) {
+//  loguear($_COOKIE["usuarioLogueado"]);
+//}
 
 function validarLogin() {
   $arrayDeErrores= [];
@@ -134,28 +134,28 @@ function loguear($email) {
   $_SESSION["usuarioLogueado"] = $email;
 }
 
-function logout() {
+/*function logout() {
   session_destroy();
   setcookie("usuarioLogueado", "", -1);
 }
-
-function estaLogueado() {
+*/
+/*function estaLogueado() {
   if (isset($_SESSION["usuarioLogueado"])) {
     return true;
   }
   else {
     return false;
   }
-}
+}*/
 
-function getUsuarioLogueado() {
+/*function getUsuarioLogueado() {
   if (estaLogueado()) {
     return traerPorEmail($_SESSION["usuarioLogueado"]);
   }
   else {
     return NULL;
   }
-}
+}*/
 
 function recordar($email) {
   setcookie("usuarioLogueado", $email, time()+3600);
