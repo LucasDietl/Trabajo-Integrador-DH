@@ -1,4 +1,4 @@
-<?php require_once("funciones.php");?>
+
 <?php require_once("soporte.php");?>
 <!DOCTYPE html>
 <html>

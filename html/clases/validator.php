@@ -12,11 +12,10 @@ class Validator {
       else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
           $arrayDeErrores["email"] = "El formato del email no es valido";
       }
-      else if ($db->traerPorEmail($_POST["email"])) {
+      else if ($db->traerPorEmail($_POST["email"])== null) {
           $arrayDeErrores["email"] = "El usuario no ha sido encontrado";
       }
-      else {
-          if (strlen($_POST["contrasena"]) < 8) {
+      else if (strlen($_POST["contrasena"]) < 8) {
               $arrayDeErrores["contrasena"] = "Su contraseña debe ser de por lo menos 8 caracteres";
           }
           else {
@@ -26,9 +25,10 @@ class Validator {
                   $arrayDeErrores["password"] = "La contraseña no coincide"; // PUEDE SER QUE TENGAMOS MESCLA DE INGLES Y CASTELLANO
               }
           }
-      }
       return $arrayDeErrores;
-  }
+      }
+
+
 		/*$arrayDeErrores = [];
 
 
@@ -55,6 +55,8 @@ class Validator {
 
   public function validarInformacion(DB $db) {
 
+      $usuario = $db->traerPorEmail($_POST["email"]);
+
       $arrayDeErrores = [];
 
       $nombreDelArchivo = $_FILES["avatar"]["name"];
@@ -78,7 +80,7 @@ class Validator {
       else if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
           $arrayDeErrores["email"] = "El formato del email no es valido";
       }
-      else if (traerPorEmail($_POST["email"]) != NULL) {
+      else if ($usuario != NULL) {
           $arrayDeErrores["email"] = "Ya existe un usuario registrado con el email ingresado";
       }
       if($_POST["username"] == "") {

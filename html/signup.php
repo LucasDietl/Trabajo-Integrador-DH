@@ -1,7 +1,6 @@
-<?php
-require_once ("soporte.php");
-require_once("funciones.php");
-if (estaLogueado()) {
+<?php require_once ("soporte.php");
+
+if ($auth->estaLogueado()) {
   header("Location:miPerfil.php");exit;
 }
 $meses = [
@@ -35,12 +34,12 @@ $arrayDeErrores = [];
 if($_POST)
 {
 
-    $arrayDeErrores = validarInformacion();
+    $arrayDeErrores = $validator->validarInformacion($db);
 
     if(count($arrayDeErrores) == 0) {
 
-      $usuario = armarUsuario($_POST);
-      guardarUsuario($usuario);
+      $usuario = new Usuario($_POST["nombre"],$_POST["apellido"],$_POST["username"], $_POST["email"], $_POST["password"], $_POST["genero"], $_POST["dia"],$_POST["mes"],$_POST["anio"]);
+      $db->guardarUsuario($usuario);
 
       $archivo = $_FILES["avatar"]["tmp_name"];
       $nombreDelArchivo = $_FILES["avatar"]["name"];
@@ -50,7 +49,7 @@ if($_POST)
 
       move_uploaded_file($archivo, $nombre);
 
-      header("Location:home.php");exit;
+      header("Location:miPerfil.php");exit;
     }
 }
 

@@ -5,7 +5,6 @@ class Usuario {
   private $apellido;
   private $username;
   private $email;
-  private $emailConfirm;
   private $password;
   private $genero;
   private $dia;
@@ -13,7 +12,7 @@ class Usuario {
   private $anio;
   private $id;
 
-  public function __construct($nombre,$apellido,$username, $email,$emailConfirm, $password,$genero, $dia, $mes,$anio, $id = null) {
+  public function __construct($nombre,$apellido,$username, $email, $password,$genero, $dia, $mes,$anio, $id = null) {
     if ($id == null) {
       // Viene por POST
       $this->password = password_hash($password, PASSWORD_DEFAULT);
@@ -25,7 +24,6 @@ class Usuario {
     $this->nombre = $nombre;
     $this->apellido = $apellido;
     $this->username = $username;
-    $this->emailConfirm = $emailConfirm;
     $this->genero = $genero;
     $this->dia = $dia;
     $this->email = $email;
@@ -57,17 +55,6 @@ class Usuario {
   public function setUserName($username) {
       $this->username = $username;
   }
-
-
-
-  public function getEmailConfirm() {
-      return $this->emailConfirm;
-  }
-
-  public function setEmailConfirm($emailConfirm) {
-      $this->emailConfirm = $emailConfirm;
-  }
-
 
 
   public function getEmail() {
@@ -131,7 +118,6 @@ class Usuario {
       "apellido" => $this->apellido,
       "username" => $this->username,
       "email" => $this->email,
-      "emailConfirm" => $this->emailConfirm,
       "password" => $this->password,
       "genero" => $this->genero,
       "dia" => $this->dia,

@@ -1,13 +1,12 @@
-<?php
-require_once("soporte.php");
-require_once("funciones.php");
+<?php require_once("soporte.php");
 
 
-if (!estaLogueado()) {
-  header("Location:register.php");exit;
+
+if (!$auth->estaLogueado()) {
+  header("Location:signin.php");exit;
 }
 
-$usuario = getUsuarioLogueado();
+$usuario = $auth->obtenerUsuarioLogueado();
 
 
 

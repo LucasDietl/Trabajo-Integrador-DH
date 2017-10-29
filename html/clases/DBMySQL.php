@@ -24,7 +24,7 @@ class DBMySQL extends DB {
     $arrayDeObjs = [];
 
     foreach ($arrayDeArrays as $array) {
-      $arrayDeObjs[] = new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["enailConfirm"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
+      $arrayDeObjs[] = new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
     }
 
     return $arrayDeObjs;
@@ -43,20 +43,19 @@ class DBMySQL extends DB {
       return NULL;
     }
     else {
-      return new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["enailConfirm"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
+      return new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
     }
 
 
   }
   public function guardarUsuario(Usuario $usuario) {
-    $sql = "INSERT into usuarios values(default, :nombre,:apellido,:username,:email,:enamilConfirm,:password,:genero,:dia, :mes, :anio)";
+    $sql = "INSERT into theblondie_db . usuarios values(default,:nombre,:apellido,:username,:email,:password,:genero,:dia, :mes, :anio )";
 
     $query = $this->conn->prepare($sql);
     $query->bindValue(":nombre",$usuario->getNombre());
     $query->bindValue(":apellido",$usuario->getApellido());
     $query->bindValue(":username",$usuario->getUserName());
     $query->bindValue(":email",$usuario->getEmail());
-    $query->bindValue(":emailConfirm",$usuario->getEmailConfirm());
     $query->bindValue(":password",$usuario->getPassword());
     $query->bindValue(":genero",$usuario->getGenero());
     $query->bindValue(":dia",$usuario->getDia());
@@ -80,7 +79,7 @@ class DBMySQL extends DB {
     $arrayDeObjs = [];
 
     foreach ($arrayDeArrays as $array) {
-      $arrayDeObjs[] = new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["enailConfirm"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
+      $arrayDeObjs[] = new Usuario($array["nombre"],$array["apellido"],$array["username"], $array["email"],$array["password"], $array["genero"], $array["dia"],$array["mes"],$array["anio"], $array["id"]);
     }
 
     return $arrayDeObjs;

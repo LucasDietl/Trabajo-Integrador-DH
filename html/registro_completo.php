@@ -1,6 +1,5 @@
-<?php
-require_once("soporte.php");
-require_once("funciones.php");
+<?php require_once("soporte.php");
+
 traerTodos();
 $email = $_GET["usuario-email"];
 
