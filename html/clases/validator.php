@@ -1,5 +1,5 @@
 <?php
-
+require_once("usuario.php");
 require_once("DB.php");
 
 class Validator {
@@ -20,8 +20,7 @@ class Validator {
           }
           else {
               $usuario = $db->traerPorEmail($_POST["email"]);
-
-              if (password_verify($_POST["contrasena"],$usuario->getPassword()) == false) {
+              if (password_verify($_POST["contrasena"],$usuario->getPassword()) != false) {
                   $arrayDeErrores["password"] = "La contraseña no coincide"; // PUEDE SER QUE TENGAMOS MESCLA DE INGLES Y CASTELLANO
               }
           }

@@ -49,7 +49,7 @@ class DBMySQL extends DB {
 
   }
   public function guardarUsuario(Usuario $usuario) {
-    $sql = "INSERT into theblondie_db . usuarios values(default,:nombre,:apellido,:username,:email,:password,:genero,:dia, :mes, :anio )";
+    $sql = "INSERT into theblondie_db . usuarios (nombre, apellido, username, email, password, genero, dia, mes ,anio) values(:nombre,:apellido,:username,:email,:password,:genero,:dia, :mes, :anio )";
 
     $query = $this->conn->prepare($sql);
     $query->bindValue(":nombre",$usuario->getNombre());

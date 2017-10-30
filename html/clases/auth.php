@@ -36,6 +36,9 @@ class Auth {
       return false;
     }
   }
+   public function recordar($email) {
+        setcookie("usuarioLogueado", $email, time()+3600);
+    }
 }
 
 ?>

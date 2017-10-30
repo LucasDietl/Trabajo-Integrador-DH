@@ -9,12 +9,13 @@ $title = 'LOGIN';
 $arrayDeErrores = [];
 
 if ($_POST) {
+
   $arrayDeErrores = $validator->validarLogin($db);
 
   if (count($arrayDeErrores) == 0) {
-    loguear($_POST["email"]);
+    $auth->loguear($_POST["email"]);
     if (isset($_POST["recordame"])) {
-      recordar($_POST["email"]);
+      $auth->recordar($_POST["email"]);
     }
 
     header("Location:miPerfil.php");exit;

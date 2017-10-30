@@ -33,7 +33,7 @@ $usuario = $auth->obtenerUsuarioLogueado();
 <!-- NOTE: Navbar end -->
 
     <section class="container slideimages altominimo">
-        <h2> Bienvenido <?=$usuario["username"]?></h2>
+        <h2> Bienvenido <?=$usuario->getUserName()?></h2>
     </section>
     <!-- NOTE: Footer start -->
     <?php require_once("footer.php"); ?>
