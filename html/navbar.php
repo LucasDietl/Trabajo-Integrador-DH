@@ -9,13 +9,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand logoname sr-only" href="home.php">THE<br>BLONDIE</a>
+      <a class="navbar-brand logoname visible-xs" href="home.php">THE<br>BLONDIE</a>
     </div>
 
 
     <div class="collapse navbar-collapse border" id="navbar1">
       <div class="text-center">
-        <a class="" style=" color:grey;" href="home.php">#Neverpony</a>
+        <a class="hidden-xs" style=" color:grey;" href="home.php">#Neverpony</a>
     </div>
     <div class="container-fluid">
       <div class="row ">
@@ -38,7 +38,7 @@
               } ?>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 hidden-xs">
             <div class="">
               <form class="navbar-form" role="search" method="get" action="zapatos.php">
                 <div class="inner-addon left-addon">
@@ -64,7 +64,7 @@
     <div class="row vertical align">
 
     <div class="col-md-2 col-sm-3">
-      <a class="navbar-brand logoname" href="home.php">THE<br>BLONDIE</a>
+      <a class="navbar-brand logoname hidden-xs" href="home.php">THE<br>BLONDIE</a>
     </div>
     <div class="col-md-8 col-sm-9 center-block">
 

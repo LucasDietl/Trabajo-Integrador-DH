@@ -56,7 +56,7 @@ if($_POST)
 ?>
 
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -140,11 +140,11 @@ if($_POST)
                                            <input type="password" class="form-control signup-form-input" id="contrasena-confirm" name="contrasena_confirm" placeholder="Ingrese Confirmación Contraseña">
                                        </div>
                                    </div>
-                                   <div class="form-group">
-                                       <label>Imagen de Perfil</label>
-                                       <div>
-                                           <input class="" value=" " type="file" name="avatar"/>
-                                       </div>
+                                   <div class="form-group custom-upload">
+
+                                       <label class="custom-upload-lable" for="avatar">Selecciona tu de Perfil</label>
+                                       <input class="" value=" " type="file" name="avatar" id="avatar" />
+
                                    </div>
                                    <div class="form-group">
                                        <label>Sexo</label>
