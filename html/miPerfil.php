@@ -6,7 +6,7 @@ if (!$auth->estaLogueado()) {
   header("Location:signin.php");exit;
 }
 
-$usuario = $auth->obtenerUsuarioLogueado();
+$usuario = $auth->obtenerUsuarioLogueado($db);
 
 
 

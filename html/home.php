@@ -1,5 +1,11 @@
-
 <?php require_once("soporte.php");?>
+<?php
+if($_POST){
+    if($_POST["button"]){
+        $auth->logout();
+        header("location:home.php");exit;
+    }};
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,12 +21,7 @@
 
     <title>The Blondie - Shoes</title>
   </head>
-  <?php
-  if($_POST){
-  if($_POST["button"]){
-    $auth->logout();
-  }};
-   ?>
+
 <body class="bgcolorhome">
 
      <!-- NOTE: Navbar start -->

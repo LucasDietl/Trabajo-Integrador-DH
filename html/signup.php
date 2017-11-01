@@ -38,7 +38,7 @@ if($_POST)
 
     if(count($arrayDeErrores) == 0) {
 
-      $usuario = new Usuario($_POST["nombre"],$_POST["apellido"],$_POST["username"], $_POST["email"], $_POST["password"], $_POST["genero"], $_POST["dia"],$_POST["mes"],$_POST["anio"]);
+      $usuario = new Usuario($_POST["nombre"],$_POST["apellido"],$_POST["username"], $_POST["email"], $_POST["contrasena"], $_POST["genero"], $_POST["dia"],$_POST["mes"],$_POST["anio"]);
       $db->guardarUsuario($usuario);
 
       $archivo = $_FILES["avatar"]["tmp_name"];

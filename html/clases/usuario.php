@@ -13,11 +13,14 @@ class Usuario {
   private $id;
 
   public function __construct($nombre,$apellido,$username, $email, $password,$genero, $dia, $mes,$anio, $id = null) {
+
     if ($id == null) {
       // Viene por POST
+
       $this->password = password_hash($password, PASSWORD_DEFAULT);
     } else {
       // Viene de la base
+
       $this->password = $password;
     }
 
