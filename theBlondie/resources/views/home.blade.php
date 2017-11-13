@@ -6,29 +6,25 @@ if($_POST){
         header("location:home.php");exit;
     }};
 ?>
+        @extends('layout')
         <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <link href="../../../html/css/bootstrap.min.css" rel="stylesheet">
-    <!-- NOTE: incluye el icono en la pestaña del navegador (Favicon)-->
-    <link rel="icon" type="image/png" href="../../../html/images/favicon.png">
-    <meta name="viewport"content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave|Sunshiney|Yesteryear|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../html/css/style.css">
-
-
+    @section('title')
     <title>The Blondie - Shoes</title>
+        @endsection
 </head>
 
 <body class="bgcolorhome">
 
 <!-- NOTE: Navbar start -->
+@section('navbar')
 <?php require_once("../../html/navbar.php"); ?>
+@endsection
 <!-- NOTE: Navbar end -->
 
 <!-- NOTE: introduccion start -->
+@section('content')
 <div class="slideimages" style="display: flex;">
     <div class="slideshow" style="">
         <img src="../../../html/images/dorada.jpg" class="izquierda"style="" alt="">
@@ -39,10 +35,13 @@ if($_POST){
         <img src="../../../html/images/cactuswide.jpg" class="medio" alt="">
     </div>
 </div>
+@endsection
 <!-- NOTE: introduccion end -->
 
 <!-- NOTE: Footer start -->
+@section('footer')
 <?php require_once("../../html/footer.php"); ?>
+@endsection
 <!-- NOTE: Footer end -->
 
 
