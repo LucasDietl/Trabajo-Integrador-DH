@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74c72aa0-43c8-43e4-8a55-9937def639f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/resources/views/layout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theBlondie/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/theBlondie/resources/views/home.blade.php" />
-    </list>
+    <list default="true" id="74c72aa0-43c8-43e4-8a55-9937def639f3" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -301,12 +296,12 @@
       <workItem from="1509623840201" duration="108000" />
       <workItem from="1509984060819" duration="611000" />
       <workItem from="1510498051074" duration="11492000" />
-      <workItem from="1510608963755" duration="2434000" />
+      <workItem from="1510608963755" duration="3027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70161000" />
+    <option name="totallyTimeSpent" value="70754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
