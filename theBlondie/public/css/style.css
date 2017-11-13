@@ -1,0 +1,532 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* NOTE: navbar sart  #000000 #606060 #e6b1a9 #fae5e2 rgb(190, 143, 108) */
+.navbarcolor{
+  background: #000000!important;
+  min-height: 100px;
+  border-color: transparent!important;
+  box-shadow: 0px 3px 25px #666666;
+  padding-left: 60px; padding-right: 60px;
+}
+
+nav div ul li a{
+  color: white!important;
+  font-family: 'Raleway', cursive;
+  font-size: 22px;
+  padding: 40px 25px!important;
+}
+.sesion{
+  color: white;
+  font-family: 'Raleway', cursive;
+}
+.sesion:hover{
+text-decoration: underline!important;
+}
+.navbar-toggle{
+  background-color: transparent!important;
+}
+.borderedondo{
+  border-radius: 5px;
+}
+.carrrito_padding{
+  padding: 15px 0px;
+}
+.padding_SignInAndUp{
+  padding: 15px 0px!important;
+}
+.btnbuscar {
+  background: #eb28e4;
+  background-image: -webkit-linear-gradient(top, #eb28e4, #2980b9);
+  background-image: -moz-linear-gradient(top, #eb28e4, #2980b9);
+  background-image: -ms-linear-gradient(top, #eb28e4, #2980b9);
+  background-image: -o-linear-gradient(top, #eb28e4, #2980b9);
+  background-image: linear-gradient(to bottom, #eb28e4, #2980b9);
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Sunshiney;
+  font-size: 1.3em;
+  color: #ffffff;
+  /*font-size: 15px;*/
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  border-width: 0px!important;
+  transition: 300ms;
+}
+.hamburgesa{
+  margin-top: 40px;
+}
+.barra_busqueda{
+  border: 0px transparent!important;
+  color: white;
+  box-shadow: none;
+  margin-left: 0px;
+  width: 100px;
+  background-color: #000000;
+  border-radius: 0px;
+}
+.barra_busqueda::-webkit-input-placeholder{
+    color: white;
+    font-family: 'Raleway', cursive;
+
+}
+.fa-facebook-square:before, .fa-instagram::before, .fa-twitter::before{
+font-size: 30px;
+height: 30px;
+width: 30px;
+
+}
+.iconos{
+  padding-top: 35px;
+}
+.inline{
+    text-align: center;
+    width: 100%;
+}
+.inlineblock{
+    display: inline-block!important;
+    float: none!important;
+}
+.barra_busqueda:focus{
+  width: 200px;
+  transition: 1s;
+}
+
+.fa::before{
+  content: "";
+  color: white;
+}
+.search{
+  background-color: transparent;
+  color: white;
+}
+.btnbuscar:hover {
+  /*background: #2c0fd1;*/
+  background-image: -webkit-linear-gradient(top, #2980b9, #eb28e4);
+  background-image: -moz-linear-gradient(top,#2980b9, #eb28e4);
+  background-image: -ms-linear-gradient(top,#2980b9, #eb28e4);
+  background-image: -o-linear-gradient(top,#2980b9, #eb28e4);
+  background-image: linear-gradient(to bottom,#2980b9, #eb28e4);
+  font-family: Sunshiney;
+  text-decoration: none;
+  color: #ffffff;
+}
+.growup{
+    overflow: hidden;
+    border: none;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    z-index: 0;
+  }
+
+  .growup:hover {
+    -webkit-transform:  scaleX(1.2) scaleY(1.2)  ;
+    transform:  scaleX(1.2) scaleY(1.2)  ;
+    z-index: 1;
+  }
+
+/* NOTE: navbar end */
+
+/* NOTE: Contenido home Start */
+.bgcolorhome{
+  background-color: white;
+}
+.slideimages{
+  margin-top: 170px; /* NOTE: este margen es para que todo lo que pongas debajo del navbar no sea tapado por el mismo */
+}
+.slideshow{
+padding: 0px!important;
+background-size: cover;
+}
+.slideshow .izquierda{
+  float: left;
+  width: 50%;
+}
+.slideshow .derecha{
+  float: right;
+  width: 50%;
+}
+.slideshow .medio{
+  float: none;
+  width: 100%;
+}
+/* NOTE: Contenido home End */
+
+.logoname{
+  color: white!important;
+  padding: 25px 25px!important;
+  font-size: 27px;
+  }
+.white{
+  color: white!important;
+}
+
+
+
+.bordecopado{
+    display: inline-block;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid rgb(218, 105, 97)!important;
+    max-height: 300px!important;
+    border-radius: 50%!important;
+    margin-top: 70px;
+  }
+.muestra{
+  padding-top: 20px;
+}
+.encabezado{
+display: block;
+width: 100%;
+text-align: center;
+}
+.tamaño{
+  float: none;
+  width: 100%!important;
+}
+
+/* NOTE: sign in start ------------------------------------------------------------------ */
+.altominimo{
+  min-height: 800px;
+}
+
+
+.signin {
+  padding: 40px 0px 40px 0px;
+  /*padding-bottom: 40px;*/
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 50px 0px 15px 0px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.signinbody {
+	background-image: url("../images/base_2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.form-horizontal {
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.form-signin-heading {
+	font-size: 2.1em;
+	font-family: Sunshiney;
+	color: white;
+}
+
+.recordarme {
+	font-family: Sunshiney;
+	font-size: 1.3em;
+	color: white;
+	line-height: 1em;
+}
+
+#inputEmail {
+	border: 1.3px solid white;
+	width: 100%;
+  height: 40px;
+	box-shadow: none;
+	background-color: transparent;
+	margin-bottom: 7px;
+}
+
+#inputPassword {
+	border: 1.3px solid white;
+	width: 100%;
+  height: 40px;
+	box-shadow: none;
+	background-color: transparent;
+	margin-bottom: 5px;
+}
+
+/* NOTE: esta clase hay que cambiarla */.form.control {
+	font-size: 17px;
+	color: white;
+}
+
+/* NOTE: esta clase hay que cambiarla */.form-control placeholder {
+	/*color: #ff3385;*/
+     color: blue;
+	font-size: 18px;
+}
+
+.btn-primary {
+	margin-top: 10px;
+	font-size: 18px;
+	height: 40px;
+	background-color: #ff3385;
+	border: none;
+	border-radius: 4px;
+}
+
+.btn-primary:hover {
+	background-color: #e6005c;
+	box-shadow: 5px 5px 10px #4d001f;
+}
+
+.margenfaq{
+  margin-bottom: 50px;
+}
+.margen{
+  margin-bottom: 350px;
+}
+/* NOTE: sign in end */
+
+/* NOTE: footer start */
+footer{
+  background: linear-gradient(to left,black ,black);
+  color: white;
+  font-family: 'Sunshiney', cursive;
+  font-size: 22px;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  clear: both;
+  border-color: transparent!important;
+
+}
+footer ul, footer h3{
+  list-style: none;
+  text-align: center;
+}
+footer ul li a{
+  color: white;
+}
+footer h3{
+  text-decoration: underline;
+}
+/* NOTE: footer end */
+
+/* NOTE: FAQS starts */
+
+.encabezadoFAQ h1 {
+  margin-top: 50px;
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 12px;
+  /*background: linear-gradient(to right,#ef32d9,#89fffd)!important;*/
+}
+
+.FAQ-compras h2 {
+    font-size: 14px;
+    margin-bottom: 23px;
+    padding-top: 20px;
+    border-top: 1px dotted #7f7f7f;
+    color: #7f7f7f;
+}
+.fondobody2{
+  background-image: url("../images/shoelover.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
+}
+/* NOTE: FAQS ends */
+
+/* NOTE: signUp Starts ---------------------------------------------------------------------*/
+
+.container-signupform {
+  background-image: url("../images/base_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  width: 100%;
+
+}
+
+
+.form-control {
+     width: 90%;
+     height: 25px;
+     padding: 6px 6px;
+     /*background-image: url("../images/brooke-cagle-70750.jpg");*/
+}
+.signup-form{
+     width: 100%;
+     background-color:  rgba(0, 0, 0, 0);
+     justify-content: space-between;
+     margin: 10px;
+     transition: 1000ms;
+}
+
+.signup-form label{
+     margin: 0px 0px 0px 10px;
+     font-size: 10px !important;
+     color: white;
+
+}
+
+.signup-form h1{
+     padding: 10px 10px 10px 10px;
+     /*font-size: 10px !important;*/
+
+}
+.signup-form p{
+     padding: 10px 10px 10px 10px;
+     color: white;
+     font-family: Sunshiney;
+     font-size: 1.5em;
+     border: solid 1px white;
+     margin-right: 6%;
+     border-radius: 0.5em;
+}
+
+.signup-form-input{
+     background-color: rgba(255, 0, 0, 0.1);
+     width: 90%;
+     margin: -3px 0px 15px 10px;
+     font-family: Sunshiney;
+     font-size: 1.3em;
+     color: white;
+     transition: 300ms;
+     border-width: 1px;
+     height: 35px;
+
+}
+
+.signup-form input::placeholder{
+     color: rgba(255, 255, 255, 0.5);
+}
+
+.signup-form-input:hover {
+     background-color: rgba(255, 255, 255, 0.4);
+     width: 90%;
+     margin: -1px -4px 8px 6px;
+     font-family: Sunshiney;
+     font-size: 1.3em;
+     color: white;
+     border-color: rgba(255, 92, 195, 1);
+     border-width: 2px;
+     height: 40px;
+     box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.5);
+     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.signup-form-input:focus {
+     background-color: rgba(255, 255, 255, 0.4);
+     width: 90%;
+     margin: -1px -4px 8px 6px;
+     font-family: Sunshiney;
+     font-size: 1.3em;
+     color: white;
+     border-color: rgba(255, 92, 195, 1);
+     border-width: 2px;
+     box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.5);
+     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+     height: 40px;
+}
+
+
+.signup-form-boton {
+     margin: 25px 3px 10px 10px !important;
+     width: 42% !important;
+     font-size: 1.5em !important;
+}
+.bgcoloroption{
+  background-color: #75003d!important;
+}
+.custom-upload{
+    width: 100%;
+    height: auto;
+    height: 50px;
+
+}
+.custom-upload-lable{
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+    color: black;
+}
+#avatar{
+    display: none;
+}
+    /* NOTE: signUp Ends*/
+
+
+/* NOTE: probando animaciones start */
+
+.logoredondo:hover{
+  -webkit-animation: pelota ease 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+}
+
+@-webkit-keyframes pelota {
+  0% {
+    -webkit-transform:  rotate(-360deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+}
+/* NOTE: probando animaciones end */
+
+
+
+@media screen and (max-width: 768px) { /* NOTE: basicamente este media query es para pantallas pequeñas */
+  /* NOTE: Home start */
+  .growup:hover{
+    -webkit-transform:  scaleX(1) scaleY(1)  ;
+    transform:  scaleX(1) scaleY(1)  ;
+      }
+  /* NOTE: Home End */
+
+  /* NOTE: sign in start */
+  .altominimo{
+    min-height: auto;
+  }
+
+.slideimages{
+    margin-top: 100px;
+}
+
+}
