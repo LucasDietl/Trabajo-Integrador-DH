@@ -6,8 +6,8 @@ if($_POST){
         header("location:home.php");exit;
     }};
 ?>
-        @extends('layout')
-        <!DOCTYPE html>
+@extends('layout')
+<!DOCTYPE html>
 <html>
 <head>
     @section('title')
@@ -27,12 +27,12 @@ if($_POST){
 @section('content')
 <div class="slideimages" style="display: flex;">
     <div class="slideshow" style="">
-        <img src="../../../html/images/dorada.jpg" class="izquierda"style="" alt="">
-        <img src="../../../html/images/blackwhite.jpg" class="derecha" alt="">
-        <img src="../../../html/images/comingsoon.jpg" class="medio" alt="">
-        <img src="../../../html/images/skate.jpg" class="izquierda" alt="">
-        <img src="../../../html/images/piernasyzapatos.jpg" class="derecha" alt="">
-        <img src="../../../html/images/cactuswide.jpg" class="medio" alt="">
+        <img src="{{asset('images/dorada.jpg')}}" class="izquierda"style="" alt="">
+        <img src="{{asset('images/blackwhite.jpg')}}" class="derecha" alt="">
+        <img src="{{asset('images/comingsoon.jpg')}}" class="medio" alt="">
+        <img src="{{asset('images/skate.jpg')}}" class="izquierda" alt="">
+        <img src="{{asset('images/piernasyzapatos.jpg')}}" class="derecha" alt="">
+        <img src="{{asset('images/cactuswide.jpg')}}" class="medio" alt="">
     </div>
 </div>
 @endsection

@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74c72aa0-43c8-43e4-8a55-9937def639f3" name="Default" comment="" />
+    <list default="true" id="74c72aa0-43c8-43e4-8a55-9937def639f3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/base_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/blackwhite.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/brooke-cagle-70750.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/brooke-cagle-70751.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/brooke_cagle_70751_s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/cactuswide.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/chicasuelo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/comingsoon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/dorada.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/favicon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/logobg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/piernasyzapatos.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/pink.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/shoelover.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/skate.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/theblondie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/zapatonegro.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/zapatostemporada.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theBlondie/public/images/zapatosvarios.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theBlondie/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/theBlondie/resources/views/home.blade.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            <state relative-caret-position="170">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+              <caret line="9" column="73" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="73" />
               <folding>
                 <marker date="1510613532808" expanded="true" signature="56:515" ph="..." />
               </folding>
@@ -97,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/html/home.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="56" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="56" />
+              <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -146,8 +170,8 @@
         <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/theBlondie/routes/web.php" />
         <option value="$PROJECT_DIR$/html/home.php" />
-        <option value="$PROJECT_DIR$/theBlondie/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/theBlondie/resources/views/layout.blade.php" />
+        <option value="$PROJECT_DIR$/theBlondie/resources/views/home.blade.php" />
       </list>
     </option>
   </component>
@@ -179,6 +203,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,8 +271,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,6 +280,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\DigitalHouse\Archivosphp\ProyectoIntegrador\Trabajo-Integrador-DH\theBlondie\public\images" />
       <recent name="C:\xampp\htdocs\DigitalHouse\Archivosphp\ProyectoIntegrador\Trabajo-Integrador-DH\theBlondie\public\css" />
     </key>
   </component>
@@ -296,26 +321,28 @@
       <workItem from="1509623840201" duration="108000" />
       <workItem from="1509984060819" duration="611000" />
       <workItem from="1510498051074" duration="11492000" />
-      <workItem from="1510608963755" duration="3027000" />
+      <workItem from="1510608963755" duration="3676000" />
+      <workItem from="1510681343793" duration="327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70754000" />
+    <option name="totallyTimeSpent" value="71730000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24670571" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24635416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -609,14 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theBlondie/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/miPerfil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -677,10 +696,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theBlondie/public/css/style.css">
+    <entry file="file://$PROJECT_DIR$/html/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theBlondie/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -693,18 +720,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/theBlondie/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="56" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -712,10 +731,18 @@
     <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+          <caret line="9" column="73" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="73" />
           <folding>
             <marker date="1510613532808" expanded="true" signature="56:515" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theBlondie/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
